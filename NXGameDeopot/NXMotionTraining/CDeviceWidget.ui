@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CDeviceWidgetClass</class>
+ <widget class="QWidget" name="CDeviceWidgetClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>553</width>
+    <height>55</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>CDeviceWidget</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background:#070E26</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QWidget" name="widget" native="true">
+     <property name="styleSheet">
+      <string notr="true">background:#070E26</string>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_45">
+      <property name="spacing">
+       <number>6</number>
+      </property>
+      <property name="leftMargin">
+       <number>10</number>
+      </property>
+      <property name="topMargin">
+       <number>20</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="label_49">
+        <property name="styleSheet">
+         <string notr="true">width: 43px;
+height: 24px;
+background: rgba(255,255,255,0.00);
+font-size: 14px;
+font-family: 'PingFangSC-Regular', 'PingFang SC', sans-serif, 'PingFangSC-Regular', 'PingFang SC', sans-serif-400;
+font-weight: normal;
+text-align: left;
+color: rgba(255,255,255,0.50);</string>
+        </property>
+        <property name="text">
+         <string>outbord</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="outBoardSignal">
+        <property name="minimumSize">
+         <size>
+          <width>24</width>
+          <height>24</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>24</width>
+          <height>24</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">image: url(:/NXMotionTraining/images/trainPage/signal-full.svg);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="outBoard">
+        <property name="minimumSize">
+         <size>
+          <width>24</width>
+          <height>24</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>24</width>
+          <height>24</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">image: url(:/NXMotionTraining/images/trainPage/master.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_7">
+        <item>
+         <widget class="QLabel" name="label_46">
+          <property name="styleSheet">
+           <string notr="true">width: 43px;
+height: 24px;
+background: rgba(255,255,255,0.00);
+font-size: 14px;
+font-family: 'PingFangSC-Regular', 'PingFang SC', sans-serif, 'PingFangSC-Regular', 'PingFang SC', sans-serif-400;
+font-weight: normal;
+text-align: left;
+color: rgba(255,255,255,0.50);</string>
+          </property>
+          <property name="text">
+           <string>master</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="masterSignal">
+          <property name="minimumSize">
+           <size>
+            <width>24</width>
+            <height>24</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>24</width>
+            <height>24</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">image: url(:/NXMotionTraining/images/trainPage/signal-3.svg);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="master">
+          <property name="minimumSize">
+           <size>
+            <width>22</width>
+            <height>22</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>22</width>
+            <height>22</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">image: url(:/NXMotionTraining/images/trainPage/battery.svg);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_5">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

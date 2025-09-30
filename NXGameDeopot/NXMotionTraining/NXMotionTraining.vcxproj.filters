@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>qml;cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>qrc;rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts</Extensions>
+    </Filter>
+    <Filter Include="Form Files\Header">
+      <UniqueIdentifier>{96a1cf9b-fa48-48ed-94a6-2bcb3e0959b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Header">
+      <UniqueIdentifier>{be8fe042-945e-4972-a197-8cb65b50187a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Header">
+      <UniqueIdentifier>{4fa30f5d-8660-48af-8396-cebdb1f93d03}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CActionWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CMotionTraining.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Header\Header.cpp">
+      <Filter>Source Files\Header</Filter>
+    </ClCompile>
+    <ClCompile Include="CDeviceWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CAnalysisWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CHistoryDataWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CResultDisplayWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CLoadingScreen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameStartCountdown.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="CActionWidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="CMotionTraining.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="Header\Header.h">
+      <Filter>Header Files\Header</Filter>
+    </QtMoc>
+    <QtMoc Include="CDeviceWidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="CAnalysisWidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="CHistoryDataWidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="CResultDisplayWidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="CLoadingScreen.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="GameStartCountdown.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="CActionWidget.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="CMotionTraining.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="Header\Header.ui">
+      <Filter>Form Files\Header</Filter>
+    </QtUic>
+    <QtUic Include="CDeviceWidget.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="CAnalysisWidget.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="CHistoryDataWidget.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="CResultDisplayWidget.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="CLoadingScreen.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="GameStartCountdown.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="NXMotionTraining.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+  </ItemGroup>
+  <ItemGroup>
+    <QtTranslation Include="NXMotionTraining_zh_CN.ts">
+      <Filter>Translation Files</Filter>
+    </QtTranslation>
+  </ItemGroup>
+</Project>
