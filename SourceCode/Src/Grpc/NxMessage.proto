@@ -1,0 +1,211 @@
+syntax = "proto3";
+option java_package = "io.grpc.message";
+
+package NX;
+
+message InitBoardMsg
+{
+    int32 sampleRate = 1;
+    int32 acquisitionMode = 2;
+    bool useGpu = 3;
+    bool compressData = 4;
+    string rhdFilePath = 5;
+    string saveDataType= 6;
+}
+
+message ImpedanceStruct {
+    double magnitude = 1;
+    double phase = 2;
+    bool valid = 3;
+    string channnelName = 4;
+}
+
+message ImpedanceMsg
+{
+    repeated ImpedanceStruct impedance = 1;
+}
+
+
+message BufferStatusResponse
+{
+    double hardwareBufferPercent = 1;
+    double softwareBufferPercent = 2;
+    double cpuLoadPercent = 3;
+}
+
+message FilterParamsMsg
+{
+    double lowerBandWidth = 1;
+    double higherBandWidth = 2;
+    double hwLowCut= 3;
+    double hwHighCut = 4;
+    double dspCutoff = 5;
+    bool enableDsp = 6;
+    bool enableLff = 7;
+    bool enableHff = 8;
+    string notchFilter = 9;
+    double order = 10;
+    string filter = 11;
+    int32 sampleRate = 12;
+    string portName = 13;
+    int32 multiNotchCnt = 14;
+}
+
+
+message EmptyMsg
+{
+}
+
+message IntMsg
+{
+    int32 value = 1;
+}
+
+message BoolMsg
+{
+    bool res = 1;
+}
+
+message SampleMsg
+{
+    int32 sampleCount = 1;
+}
+
+message StringMsg
+{
+    string value = 1;
+}
+
+message StringListMsg
+{
+    repeated string values =1;
+}
+
+message SetCommandMsg
+{
+	string parameter = 1;
+	string value = 2;
+}
+
+message ExecuteCommandMsg
+{
+	string action = 1;
+}
+
+message ChannelMsg
+{
+	string nativeChannelName = 1;
+	string customChannelName = 2;
+    string color = 3;
+}
+
+message SignalsMsg
+{
+	map<string, ChannelMsg> channelMap = 1;   // map from native name to channel pointer, for quick access
+    int32 playbackInSecs = 2; // only for playback mode
+    uint64 maxTimestamp = 3; // only for playback mode
+}
+
+message WaveformMsg
+{
+    map<string, bytes> yData = 1;
+    map<string, bytes> yMin = 2;
+    map<string, bytes> yMax = 3;
+    uint64 startTimestamp = 4;
+    uint64 endTimestamp = 5;
+    int32 validZoneIndex = 6;
+    bool isSweepFirstTime = 7;
+    bool isUseVerticalLines = 8;
+    bool isRunning = 9;
+}
+
+message DiplayParamMsg
+{
+    double timespanPerFullRefresh = 1;
+    double displayWidthInPixel = 2;
+    double refreshZoneCnt = 3;
+    bool isRollMode = 4;
+}
+
+message SpectrogramSegmentMsg 
+{
+    string wavename = 1;
+    int32 sampleNum = 2;
+    bytes samplesData = 3;
+    bytes timestamps = 4;
+}
+
+enum OscillographMode {
+    OS_SIGNAL = 0;
+    OS_SPECTROGRAM = 1;
+}
+
+message OsModeMsg {
+    OscillographMode mode = 1;
+}
+message SignalsMsgRequest {
+  repeated int32 numbers = 1;
+}
+
+message NotchMsg {
+    enum NotchType {
+        NT_NONE = 0;
+        NT_50HZ = 1;
+        NT_60HZ = 2;
+    }
+    string portName = 1;
+    NotchType notchType = 2;
+}
+
+message FilterMsg {
+    string portName = 1;
+    string type = 2;
+    double value = 3;
+    int32 order = 4;
+}
+
+message TargetTimeMsg {
+    uint64 targetTime = 1;
+}
+
+message HeatScaleChannelNamesMsg{
+    repeated string wavenames = 1;
+}
+
+message HeatScalePair
+{
+    string wavename = 1;
+    double heatScale = 2;
+}
+
+message HeatScaleResponse
+{
+    repeated HeatScalePair heatScalePair = 1;
+}
+
+message ProgressStatus {
+    bool isCompleted = 1;
+    int32 progress = 2;
+}
+message BackupRestoreMsg{
+     string startDateTime = 1;
+  
+}
+message RestoreMsg{
+
+   repeated  string restorePath = 1;
+}
+
+enum RpcExportFileType{
+    Rpc_Nx_Rhd = 0;
+    Rpc_NX_Edf = 1;
+    Rpc_NX_Mat =2;
+}
+
+message ExportDataMsg{
+    string sourceFilePath = 1;
+    string destFilePath = 2;
+    bool isSrcCompressed = 3;
+    RpcExportFileType exportFileType = 4;
+}
+

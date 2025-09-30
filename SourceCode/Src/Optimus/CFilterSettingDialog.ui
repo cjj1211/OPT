@@ -1,0 +1,791 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CFilterSettingDialog</class>
+ <widget class="QDialog" name="CFilterSettingDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>588</width>
+    <height>588</height>
+   </rect>
+  </property>
+  <property name="mouseTracking">
+   <bool>false</bool>
+  </property>
+  <property name="windowTitle">
+   <string>Filter Setting</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="Optimus.qrc">
+    <normaloff>:/Optimus/images/common/logo.ico</normaloff>:/Optimus/images/common/logo.ico</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#CFilterSettingDialog {
+	width: 580px;
+	height: 418px;	
+	
+	background-color: rgba(255, 255, 255, 0.0);
+}</string>
+  </property>
+  <property name="modal">
+   <bool>false</bool>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <widget class="QWidget" name="container" native="true">
+     <property name="styleSheet">
+      <string notr="true">#container {
+	border:None;
+	background: transparent;
+	border-radius: 8px;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.522, x2:1, y2:0.528, stop:0 #2A427E, stop:1 #0F1C49);
+}</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <property name="leftMargin">
+           <number>24</number>
+          </property>
+          <property name="topMargin">
+           <number>20</number>
+          </property>
+          <property name="rightMargin">
+           <number>18</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="styleSheet">
+             <string notr="true">width: 81px;
+height: 28px;
+font-size: 20px;
+font-weight: bold;
+color: #ffffff;</string>
+            </property>
+            <property name="text">
+             <string>Filter Settings</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_7">
+            <property name="styleSheet">
+             <string notr="true">width: 81px;
+height: 28px;
+font-size: 20px;
+font-weight: bold;
+color: #ffffff;</string>
+            </property>
+            <property name="text">
+             <string>(</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="areaNum">
+            <property name="styleSheet">
+             <string notr="true">width: 81px;
+height: 28px;
+font-size: 20px;
+font-weight: bold;
+color: #ffffff;</string>
+            </property>
+            <property name="text">
+             <string>01</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_10">
+            <property name="styleSheet">
+             <string notr="true">width: 81px;
+height: 28px;
+font-size: 20px;
+font-weight: bold;
+color: #ffffff;</string>
+            </property>
+            <property name="text">
+             <string>Area</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_11">
+            <property name="styleSheet">
+             <string notr="true">width: 81px;
+height: 28px;
+font-size: 20px;
+font-weight: bold;
+color: #ffffff;</string>
+            </property>
+            <property name="text">
+             <string>|Port </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="portChar">
+            <property name="styleSheet">
+             <string notr="true">width: 81px;
+height: 28px;
+font-size: 20px;
+font-weight: bold;
+color: #ffffff;</string>
+            </property>
+            <property name="text">
+             <string>A</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_8">
+            <property name="styleSheet">
+             <string notr="true">width: 81px;
+height: 28px;
+font-size: 20px;
+font-weight: bold;
+color: #ffffff;</string>
+            </property>
+            <property name="text">
+             <string>)</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton">
+            <property name="minimumSize">
+             <size>
+              <width>18</width>
+              <height>18</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>18</width>
+              <height>18</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+	background-color: rgba(255, 255, 255,0);
+	color: rgb(195, 195, 195);
+	border-image: url(:/Optimus/images/trainPage/x.svg);
+}
+
+QPushButton::hover{
+	border-image: url(:/Optimus/images/trainPage/x-hover.svg);
+}</string>
+            </property>
+            <property name="text">
+             <string>×</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QWidget" name="inputerContainer" native="true">
+          <property name="styleSheet">
+           <string notr="true">QLabel {
+  font-size: 16px;
+  font-weight: normal;
+  color: rgba(255,255,255,0.95);
+}
+
+QCheckBox {
+ font-size: 16px;
+ font-weight: normal;
+}
+
+QComboBox {
+	width: 170px;
+	height: 28px;
+}
+
+QDoubleSpinBox {
+	width: 170px;
+	height: 28px;
+}</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_5">
+           <property name="spacing">
+            <number>30</number>
+           </property>
+           <property name="leftMargin">
+            <number>131</number>
+           </property>
+           <property name="topMargin">
+            <number>38</number>
+           </property>
+           <property name="rightMargin">
+            <number>131</number>
+           </property>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_5">
+             <item>
+              <widget class="QLabel" name="label_4">
+               <property name="text">
+                <string>Sample Rate</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QComboBox" name="sampleRateCombo">
+               <property name="minimumSize">
+                <size>
+                 <width>210</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>210</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <item>
+                <property name="text">
+                 <string>500 Hz</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>800 Hz</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>1000 Hz</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>1250 Hz</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>1500 Hz</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>2000 Hz</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>2500 Hz</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>3000 Hz</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>3333 Hz</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>4000 Hz</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>5000 Hz</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>6250 Hz</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>8000 Hz</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>10000 Hz</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>12500 Hz</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>15000 Hz</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>20000 Hz</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>25000 Hz</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>30000 Hz</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_4">
+             <item>
+              <widget class="QLabel" name="label_5">
+               <property name="text">
+                <string>Notch</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QComboBox" name="notchCombo">
+               <property name="minimumSize">
+                <size>
+                 <width>210</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>210</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <item>
+                <property name="text">
+                 <string>None</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>50 Hz</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>60 Hz</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_3">
+             <item>
+              <widget class="QCheckBox" name="lowCutCheck">
+               <property name="text">
+                <string>Low Cut</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QDoubleSpinBox" name="lowCutSpinBox">
+               <property name="minimumSize">
+                <size>
+                 <width>210</width>
+                 <height>32</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>210</width>
+                 <height>32</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true"/>
+               </property>
+               <property name="buttonSymbols">
+                <enum>QAbstractSpinBox::NoButtons</enum>
+               </property>
+               <property name="suffix">
+                <string>Hz</string>
+               </property>
+               <property name="minimum">
+                <double>0.100000000000000</double>
+               </property>
+               <property name="maximum">
+                <double>30000.000000000000000</double>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_2">
+             <item>
+              <widget class="QCheckBox" name="HighCutCheck">
+               <property name="text">
+                <string>High Cut</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QDoubleSpinBox" name="highCutSpinBox">
+               <property name="minimumSize">
+                <size>
+                 <width>210</width>
+                 <height>32</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>210</width>
+                 <height>32</height>
+                </size>
+               </property>
+               <property name="buttonSymbols">
+                <enum>QAbstractSpinBox::NoButtons</enum>
+               </property>
+               <property name="suffix">
+                <string>Hz</string>
+               </property>
+               <property name="minimum">
+                <double>0.100000000000000</double>
+               </property>
+               <property name="maximum">
+                <double>30000.000000000000000</double>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_9">
+             <item>
+              <widget class="QLabel" name="label_2">
+               <property name="text">
+                <string>HW LCF</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QDoubleSpinBox" name="hwLcf">
+               <property name="minimumSize">
+                <size>
+                 <width>210</width>
+                 <height>32</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>210</width>
+                 <height>32</height>
+                </size>
+               </property>
+               <property name="frame">
+                <bool>true</bool>
+               </property>
+               <property name="readOnly">
+                <bool>false</bool>
+               </property>
+               <property name="buttonSymbols">
+                <enum>QAbstractSpinBox::NoButtons</enum>
+               </property>
+               <property name="minimum">
+                <double>0.100000000000000</double>
+               </property>
+               <property name="maximum">
+                <double>500.000000000000000</double>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_8">
+             <item>
+              <widget class="QLabel" name="label_3">
+               <property name="text">
+                <string>HW HCF</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QDoubleSpinBox" name="hwHcf">
+               <property name="minimumSize">
+                <size>
+                 <width>210</width>
+                 <height>32</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>210</width>
+                 <height>32</height>
+                </size>
+               </property>
+               <property name="buttonSymbols">
+                <enum>QAbstractSpinBox::NoButtons</enum>
+               </property>
+               <property name="minimum">
+                <double>100.000000000000000</double>
+               </property>
+               <property name="maximum">
+                <double>15000.000000000000000</double>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_7">
+             <item>
+              <widget class="QCheckBox" name="dspCheck">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>32</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>Dsp</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QDoubleSpinBox" name="dspCutoff">
+               <property name="minimumSize">
+                <size>
+                 <width>210</width>
+                 <height>32</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>210</width>
+                 <height>32</height>
+                </size>
+               </property>
+               <property name="buttonSymbols">
+                <enum>QAbstractSpinBox::NoButtons</enum>
+               </property>
+               <property name="minimum">
+                <double>0.100000000000000</double>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_4">
+          <property name="spacing">
+           <number>12</number>
+          </property>
+          <item>
+           <spacer name="verticalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_6">
+            <item>
+             <spacer name="horizontalSpacer_2">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QPushButton" name="cancelBtn">
+              <property name="minimumSize">
+               <size>
+                <width>94</width>
+                <height>34</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>94</width>
+                <height>34</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+background: rgba(23, 43, 115, 0.3);
+border-radius: 4px;
+border: 1px solid rgba(24, 144, 255, 0.6);
+font-size: 16px;
+font-weight: normal;
+color: rgba(128,189,246,0.6);
+}
+
+QPushButton::hover {
+background: rgba(23, 43, 115, 1);
+border-radius: 4px;
+border: 1px solid #1890FF;
+font-size: 16px;
+font-weight: normal;
+color: rgba(128,189,246,1);
+}</string>
+              </property>
+              <property name="text">
+               <string>Cancel</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="confirmBtn">
+              <property name="minimumSize">
+               <size>
+                <width>94</width>
+                <height>34</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>94</width>
+                <height>34</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Confirm</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_3">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <spacer name="verticalSpacer">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="Optimus.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>CFilterSettingDialog</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>544</x>
+     <y>40</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>377</x>
+     <y>1</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cancelBtn</sender>
+   <signal>clicked()</signal>
+   <receiver>CFilterSettingDialog</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>290</x>
+     <y>563</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>16</x>
+     <y>414</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

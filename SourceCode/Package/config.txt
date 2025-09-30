@@ -1,0 +1,7 @@
+;!@Install@!UTF-8!
+
+Title="Optimus"
+
+ExecuteFile="./bin/Optimus.exe"
+
+;!@InstallEnd@!

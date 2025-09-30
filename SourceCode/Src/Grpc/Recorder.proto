@@ -1,0 +1,63 @@
+syntax = "proto3";
+option java_package = "io.grpc.recorder";
+import "NxMessage.proto";
+package NX;
+
+service Recorder {
+    rpc connectTest(EmptyMsg) returns(BoolMsg) {}
+    rpc setMasterId(StringMsg) returns(EmptyMsg) {}
+    rpc isControllerConnected(EmptyMsg) returns(BoolMsg) {}
+    rpc initBoard(InitBoardMsg) returns(SignalsMsg)  {}
+    rpc closeController(EmptyMsg) returns(EmptyMsg) {}
+    rpc resetSampleRate(IntMsg) returns(EmptyMsg) {}
+    rpc getPID(EmptyMsg) returns(StringMsg){}
+    rpc getDeviceID(EmptyMsg) returns(StringMsg){}
+    rpc getVID(EmptyMsg) returns(StringMsg){}
+
+    rpc loadWaveformData(StringListMsg) returns(WaveformMsg) {}
+    rpc setOscillographMode(OsModeMsg) returns(EmptyMsg) {}
+    rpc setSelectedWaveName(StringMsg) returns(EmptyMsg) {} // native wavename
+    rpc loadSpectrogramData(EmptyMsg) returns(stream SpectrogramSegmentMsg) {}
+
+    rpc setSignalInfo(IntMsg) returns(EmptyMsg){}
+    rpc setSignalType(SignalsMsgRequest) returns(EmptyMsg){}
+    rpc setTimeScale(IntMsg) returns(EmptyMsg){}
+    rpc setNotch(NotchMsg) returns(EmptyMsg) {}
+    rpc setLowFilter(FilterMsg) returns(EmptyMsg) {}
+    rpc setHighFilter(FilterMsg) returns(EmptyMsg) {}
+  
+    rpc enableMeasureHeatScale(BoolMsg) returns(EmptyMsg) { };
+    rpc setHeatScaleChannels(HeatScaleChannelNamesMsg) returns(EmptyMsg) {};
+    rpc getHeatScales(EmptyMsg) returns(HeatScaleResponse) {};
+
+    rpc sendSetCommand(SetCommandMsg) returns(EmptyMsg) {}
+    rpc sendExecuteCommand(ExecuteCommandMsg) returns(EmptyMsg) {}
+    rpc setStoragePath(StringMsg) returns(EmptyMsg){}
+    rpc setImpedanceFileName(StringMsg) returns(EmptyMsg){}
+    rpc startRecord(EmptyMsg) returns(EmptyMsg) {}
+    rpc restartRecord(IntMsg) returns(EmptyMsg) {}
+    rpc stopRecord(EmptyMsg) returns(EmptyMsg) {}
+
+    rpc getDisplayListAmplifiers(StringMsg) returns(StringListMsg)  { }
+
+    // Update Display Params
+    rpc updateDisplayParam(DiplayParamMsg) returns(EmptyMsg){};
+    rpc updateFilterParams(FilterParamsMsg) returns(EmptyMsg) {};
+    rpc getImpedanceInfo(StringListMsg) returns(ImpedanceMsg) {};
+    rpc getMeasureImpedanceStatus(EmptyMsg) returns(ProgressStatus) {};
+    rpc getBufferStatus(EmptyMsg) returns(BufferStatusResponse) {};
+    rpc jumpToPosition(TargetTimeMsg) returns(EmptyMsg) {};
+
+
+    //BackupRestore
+
+    rpc startBackup(BackupRestoreMsg) returns(EmptyMsg) {};
+    rpc startRestore(RestoreMsg) returns(EmptyMsg) {};
+
+    // Export 
+    rpc exportData(ExportDataMsg) returns(BoolMsg) {};
+    rpc stopExport(EmptyMsg) returns(EmptyMsg){};
+    rpc isExportRunning(EmptyMsg) returns(BoolMsg){};
+    rpc getExportProgress(EmptyMsg) returns(IntMsg){};
+
+}

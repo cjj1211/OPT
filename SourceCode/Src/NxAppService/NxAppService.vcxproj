@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B0562CE6-4ECD-42C5-A137-4565AA2BA8CD}</ProjectGuid>
+    <Keyword>QtVS_v304</Keyword>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">10.0.22621.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">10.0.22621.0</WindowsTargetPlatformVersion>
+    <QtMsBuild Condition="'$(QtMsBuild)'=='' OR !Exists('$(QtMsBuild)\qt.targets')">$(SolutionDir)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="QtSettings">
+    <QtInstall>5.12.12_msvc2017_64</QtInstall>
+    <QtModules>core;gui;widgets;websockets</QtModules>
+    <QtBuildConfig>debug</QtBuildConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="QtSettings">
+    <QtInstall>5.12.12_msvc2017_64</QtInstall>
+    <QtModules>core;gui;widgets;websockets</QtModules>
+    <QtBuildConfig>release</QtBuildConfig>
+  </PropertyGroup>
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+    <Import Project="..\CommonProp\Debug_x64.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+    <Import Project="..\CommonProp\Release_x64.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
+    <ClCompile>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>NXAPPSERVICE_LIB;ORMPP_ENABLE_MYSQL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="Configuration">
+    <ClCompile>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>NXAPPSERVICE_LIB;ORMPP_ENABLE_MYSQL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <QtMoc Include="CChannelNameService.h" />
+    <QtMoc Include="CChannelPlanService.h" />
+    <QtMoc Include="CTreatmentRecordService.h" />
+    <QtMoc Include="COscillographService.h" />
+    <QtMoc Include="CCompressThread.h" />
+    <QtMoc Include="CPlaybackService.h" />
+    <QtMoc Include="CStandardTreatmentService.h" />
+    <QtMoc Include="IAppService.h" />
+    <QtMoc Include="CTrainService.h" />
+    <QtMoc Include="CUserService.h" />
+    <QtMoc Include="CCompressService.h" />
+    <QtMoc Include="CLoginService.h" />
+    <QtMoc Include="CMainFrameService.h" />
+    <QtMoc Include="CRestoreService.h" />
+    <QtMoc Include="CWebSocketService.h" />
+    <QtMoc Include="CWebSocketServer.h" />
+    <QtMoc Include="HeartBeatThread.h" />
+    <QtMoc Include="CPatientInfoService.h" />
+    <ClInclude Include="nxappservice_global.h" />
+    <QtMoc Include="CPatientAdminService.h" />
+    <ClCompile Include="CChannelNameService.cpp" />
+    <ClCompile Include="CChannelPlanService.cpp" />
+    <ClCompile Include="CCompressService.cpp" />
+    <ClCompile Include="CCompressThread.cpp" />
+    <ClCompile Include="CLoginService.cpp" />
+    <ClCompile Include="CMainFrameService.cpp" />
+    <ClCompile Include="CPatientInfoService.cpp" />
+    <ClCompile Include="CPlaybackService.cpp" />
+    <ClCompile Include="CRestoreService.cpp" />
+    <ClCompile Include="CStandardTreatmentService.cpp" />
+    <ClCompile Include="CTrainService.cpp" />
+    <ClCompile Include="CTreatmentRecordService.cpp" />
+    <ClCompile Include="COscillographService.cpp" />
+    <ClCompile Include="CUserService.cpp" />
+    <ClCompile Include="CWebSocketServer.cpp" />
+    <ClCompile Include="CWebSocketService.cpp" />
+    <ClCompile Include="HeartBeatThread.cpp" />
+    <ClCompile Include="IAppService.cpp" />
+    <ClCompile Include="CPatientAdminService.cpp" />
+    <ClInclude Include="WaveformDto.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NxCommunication\NxCommunication.vcxproj">
+      <Project>{c1d17329-ca2b-4d06-a9e9-2d6843acf797}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\NxDBManager\NxDBManager.vcxproj">
+      <Project>{5c5d595d-2562-4335-a4e4-77dbe328aa93}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\NxFaceIdentifier\NxFaceIdentifier.vcxproj">
+      <Project>{740ee92d-639b-4a40-989c-3c5bfef0e45d}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\NxSystemCfg\NxSystemCfg.vcxproj">
+      <Project>{937bf3cb-735f-4dfd-967d-88f8b07f7439}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="..\packages\NXLogger.1.0.1\build\native\NXLogger.targets" Condition="Exists('..\packages\NXLogger.1.0.1\build\native\NXLogger.targets')" />
+    <Import Project="..\packages\mysql.8.0.1\build\native\mysql.targets" Condition="Exists('..\packages\mysql.8.0.1\build\native\mysql.targets')" />
+    <Import Project="..\packages\quazip.1.0.2\build\native\quazip.targets" Condition="Exists('..\packages\quazip.1.0.2\build\native\quazip.targets')" />
+    <Import Project="..\packages\iguana.1.0.4\build\native\iguana.targets" Condition="Exists('..\packages\iguana.1.0.4\build\native\iguana.targets')" />
+    <Import Project="..\packages\frozen.0.0.1\build\native\frozen.targets" Condition="Exists('..\packages\frozen.0.0.1\build\native\frozen.targets')" />
+    <Import Project="..\packages\ormpp.1.1.0\build\native\ormpp.targets" Condition="Exists('..\packages\ormpp.1.1.0\build\native\ormpp.targets')" />
+    <Import Project="..\packages\yalantinglibs.0.2.7\build\native\yalantinglibs.targets" Condition="Exists('..\packages\yalantinglibs.0.2.7\build\native\yalantinglibs.targets')" />
+  </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\NXLogger.1.0.1\build\native\NXLogger.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\NXLogger.1.0.1\build\native\NXLogger.targets'))" />
+    <Error Condition="!Exists('..\packages\mysql.8.0.1\build\native\mysql.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\mysql.8.0.1\build\native\mysql.targets'))" />
+    <Error Condition="!Exists('..\packages\quazip.1.0.2\build\native\quazip.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\quazip.1.0.2\build\native\quazip.targets'))" />
+    <Error Condition="!Exists('..\packages\iguana.1.0.4\build\native\iguana.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\iguana.1.0.4\build\native\iguana.targets'))" />
+    <Error Condition="!Exists('..\packages\frozen.0.0.1\build\native\frozen.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\frozen.0.0.1\build\native\frozen.targets'))" />
+    <Error Condition="!Exists('..\packages\ormpp.1.1.0\build\native\ormpp.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\ormpp.1.1.0\build\native\ormpp.targets'))" />
+    <Error Condition="!Exists('..\packages\yalantinglibs.0.2.7\build\native\yalantinglibs.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\yalantinglibs.0.2.7\build\native\yalantinglibs.targets'))" />
+  </Target>
+</Project>

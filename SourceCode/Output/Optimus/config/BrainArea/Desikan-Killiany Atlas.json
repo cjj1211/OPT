@@ -1,0 +1,554 @@
+{
+    "LeftHemisphere": [
+        {
+            "Name": "Temporal",
+            "ChineseName": "颞叶",
+            "Areas": [
+                {
+                    "Name": "Temporal role",
+                    "ChineseName": "颞极",
+                    "Label": 1000,
+                    "Center": [-31,40,-59],
+                    "Rotate": [-38,154,15]
+                },
+                {
+                    "Name": "Bankssts",
+                    "ChineseName": "颞上沟",
+                    "Label": 1001,
+                    "Center": [-66,-34,-13],
+                    "Rotate": [-97,164,111]
+                },
+                {
+                    "Name": "Entorhinal",
+                    "ChineseName": "嗅皮质",
+                    "Label": 1006,
+                    "Center": [-16,12,-49],
+                    "Rotate": [-105,68,-103]
+                },
+                {
+                    "Name": "Fusiform",
+                    "ChineseName": "梭状回",
+                    "Label": 1007,
+                    "Center": [-31,-38,-40],
+                    "Rotate": [-174,27,180]
+                },
+                {
+                    "Name": "Inferior Temporal",
+                    "ChineseName": "下颞叶",
+                    "Label": 1009,
+                    "Center": [-56,0,-55],
+                    "Rotate": [142,3,-5]
+                },
+                {
+                    "Name": "Middle Temporal",
+                    "ChineseName": "颞中回",
+                    "Label": 1015,
+                    "Center": [-72,-25,-28],
+                    "Rotate": [-84,-180,88]
+                },
+                {
+                    "Name": "Para Hippocampal",
+                    "ChineseName": "海马旁回",
+                    "Label": 1016,
+                    "Center": [-16,-11,-37],
+                    "Rotate": [-56,-154,-119]
+                },
+                {
+                    "Name": "Superior Temporal",
+                    "ChineseName": "颞上回",
+                    "Label": 1030,
+                    "Center": [-70,8,-20],
+                    "Rotate": [80,-25,-93]
+                },
+                {
+                    "Name": "TransversetTemporal",
+                    "ChineseName": "颞横回",
+                    "Label": 1034,
+                    "Center": [-68,8,-7],
+                    "Rotate": [91,11,-97]
+                }
+            ]
+        },
+        {
+            "Name": "Parietal",
+            "ChineseName": "顶叶",
+            "Areas": [
+                {
+                    "Name": "Inferior Parietal",
+                    "ChineseName": "下顶叶",
+                    "Label": 1008,
+                    "Center": [-52,-53,17],
+                    "Rotate": [-101,-156,121]
+                },
+                {
+                    "Name": "Para Central",
+                    "ChineseName": "旁中央小叶",
+                    "Label": 1017,
+                    "Center": [-1,-11,46],
+                    "Rotate": [91,1,87]
+                },
+                {
+                    "Name": "Post Cntral",
+                    "ChineseName": "中央后回",
+                    "Label": 1022,
+                    "Center": [-54,-7,39],
+                    "Rotate": [55,0,-88]
+                },
+                {
+                    "Name": "SuperiorFrontal",
+                    "ChineseName": "顶叶上回",
+                    "Label": 1029,
+                    "Center": [-21,-49,50],
+                    "Rotate": [45,-1,-15]
+                },
+                {
+                    "Name": "Supramarginal",
+                    "ChineseName": "缘上回",
+                    "Label": 1031,
+                    "Center": [-65,-15,21],
+                    "Rotate": [-127,-134,119]
+                },
+                {
+                    "Name": "Pre Cuneus",
+                    "ChineseName": "楔前叶",
+                    "Label": 1025,
+                    "Center": [0,-42,26],
+                    "Rotate": [93,-46,93]
+                }
+            ]
+        },
+        {
+            "Name": "Frontal",
+            "ChineseName": "额叶",
+            "Areas": [
+                {
+                    "Name": "CaudalMiddleFrontal",
+                    "ChineseName": "额中回上部",
+                    "Label": 1003,
+                    "Center": [-39, 36, 40],
+                    "Rotate":[4, 36, 168]
+                },
+                {
+                    "Name": "LateralOrbitoFrontal",
+                    "ChineseName": "外侧眶额",
+                    "Label": 1012,
+                    "Center": [-24,54,-45],
+                    "Rotate": [-21,-156,-9]
+                },
+                {
+                    "Name": "Medial Orbito Frontal",
+                    "ChineseName": "内侧眶额",
+                    "Label": 1014,
+                    "Center": [0,69,-31],
+                    "Rotate": [0,91,0]
+                },
+                {
+                    "Name": "Pars Opercularis",
+                    "ChineseName": "额下回后部",
+                    "Label": 1018,
+                    "Center": [-64,35,-1],
+                    "Rotate": [-85,-166,-166]
+                },
+                {
+                    "Name": "Pars Orbitalis",
+                    "ChineseName": "额下回眶部",
+                    "Label": 1019,
+                    "Center": [-51,60,-32],
+                    "Rotate": [-53,-135,38]
+                },
+                {
+                    "Name": "Pars Trianglaris",
+                    "ChineseName": "额下回三角部",
+                    "Label": 1020,
+                    "Center": [-60,51,-15],
+                    "Rotate": [-93,-154,70]
+                },
+                {
+                    "Name": "Pre Central",
+                    "ChineseName": "中央前回",
+                    "Label": 1024,
+                    "Center": [-58,21,26],
+                    "Rotate": [59,-17,-88]
+                },
+                {
+                    "Name": "Rostral Middle Frontal",
+                    "ChineseName": "额中回下部",
+                    "Label": 1027,
+                    "Center": [-41,74,0],
+                    "Rotate": [62,-40,-115]
+                },
+                {
+                    "Name": "Superior Frontal",
+                    "ChineseName": "额上回",
+                    "Label": 1028,
+                    "Center": [-15,71,24],
+                    "Rotate": [54,1,-149]
+                },
+                {
+                    "Name": "Front Pole",
+                    "ChineseName": "额极",
+                    "Label": 1032,
+                    "Center": [-13,88,-30],
+                    "Rotate": [103,-5,-180]
+                }        
+            ]
+        },
+        {
+            "Name": "Occipital",
+            "ChineseName": "枕叶",
+            "Areas": [
+                {
+                    "Name": "Cuneus",
+                    "ChineseName": "楔形区",
+                    "Label": 1005,
+                    "Center": [3,-68,-3],
+                    "Rotate": [100,-69,90]
+                },
+                {
+                    "Name": "Lateral Occipital",
+                    "ChineseName": "枕叶外侧",
+                    "Label": 1011,
+                    "Center": [-33,-80,-15],
+                    "Rotate": [77,5,-36]
+                },
+                {
+                    "Name": "Lingual",
+                    "ChineseName": "舌回",
+                    "Label": 1013,
+                    "Center": [-7,-46,-24],
+                    "Rotate": [128,-33,91]
+                },
+                {
+                    "Name": "Pericalcarine",
+                    "ChineseName": "距状旁回",
+                    "Label": 1021,
+                    "Center": [3,-68,-20],
+                    "Rotate": [100,-69,90]
+                }
+            ]
+        },
+        {
+            "Name": "Limbic System",
+            "ChineseName": "边缘系统",
+            "Areas": [
+                {
+                    "Name": "Caudal Anterior Cingulate",
+                    "ChineseName": "前扣带回上部",
+                    "Label": 1002,
+                    "Center": [0,40,8],
+                    "Rotate": [91,42,84]
+                },
+                {
+                    "Name": "Isthmus Of Cingulate Gyrus",
+                    "ChineseName": "峡部扣带回",
+                    "Label": 1010,
+                    "Center": [0,-28,6],
+                    "Rotate": [91,-62,90]
+                },
+                {
+                    "Name": "Posterior Cingulate",
+                    "ChineseName": "扣带回后部",
+                    "Label": 1023,
+                    "Center": [0,8,19],
+                    "Rotate": [90,13,90]
+                },
+                {
+                    "Name": "Rostral Anterior Cingulate",
+                    "ChineseName": "前扣带回后部",
+                    "Label": 1026,
+                    "Center": [1,60,-14],
+                    "Rotate": [90,58,90]
+                }
+            ]
+        },
+        {
+            "Name": "Insula",
+            "ChineseName": "岛页",
+            "Areas":[
+                {
+                    "Name": "Insula",
+                    "ChineseName": "岛回",
+                    "Label": 1035,
+                    "Center": [0,0,0],
+                    "Rotate": [0,0,0]
+                }
+            ]
+        }
+    ],
+    "RightHemisphere":[
+        {
+            "Name": "Temporal",
+            "ChineseName": "颞叶",
+            "Areas": [
+                {
+                    "Name": "Temporal role",
+                    "ChineseName": "颞极",
+                    "Label": 2000,
+                    "Center": [31,40,-59],
+                    "Rotate": [121,-48,179]
+                },
+                {
+                    "Name": "Bankssts",
+                    "ChineseName": "颞上沟",
+                    "Label": 2001,
+                    "Center": [69,-27,-13],
+                    "Rotate": [85,-46,74]
+                },
+                {
+                    "Name": "Entorhinal",
+                    "ChineseName": "嗅皮质",
+                    "Label": 2006,
+                    "Center": [18,17,-49],
+                    "Rotate": [84,-109,-101]
+                },
+                {
+                    "Name": "Fusiform",
+                    "ChineseName": "梭状回",
+                    "Label": 2007,
+                    "Center": [30,-38,-39],
+                    "Rotate": [-174,-27,180]
+                },
+                {
+                    "Name": "Inferior Temporal",
+                    "ChineseName": "下颞叶",
+                    "Label": 2009,
+                    "Center": [56,0,-55],
+                    "Rotate": [142,-3,17]
+                },
+                {
+                    "Name": "Middle Temporal",
+                    "ChineseName": "颞中回",
+                    "Label": 2015,
+                    "Center": [71,-24,-31],
+                    "Rotate": [97,-32,60]
+                },
+                {
+                    "Name": "Para Hippocampal",
+                    "ChineseName": "海马旁回",
+                    "Label": 2016,
+                    "Center": [18,-13,-36],
+                    "Rotate": [27,145,-119]
+                },
+                {
+                    "Name": "Superior Temporal",
+                    "ChineseName": "颞上回",
+                    "Label": 2030,
+                    "Center": [70,8,-20],
+                    "Rotate": [56,-86,133]
+                },
+                {
+                    "Name": "TransversetTemporal",
+                    "ChineseName": "颞横回",
+                    "Label": 2034,
+                    "Center": [70,8,-10],
+                    "Rotate": [56,-86,133]
+                }
+            ]
+        },
+        {
+            "Name": "Parietal",
+            "ChineseName": "顶叶",
+            "Areas": [
+                {
+                    "Name": "Inferior Parietal",
+                    "ChineseName": "下顶叶",
+                    "Label": 2008,
+                    "Center": [53,-52,12],
+                    "Rotate": [79,12,58]
+                },
+                {
+                    "Name": "Para Central",
+                    "ChineseName": "旁中央小叶",
+                    "Label": 2017,
+                    "Center": [-1,-11,46],
+                    "Rotate": [93,-6,-92]
+                },
+                {
+                    "Name": "Post Cntral",
+                    "ChineseName": "中央后回",
+                    "Label": 2022,
+                    "Center": [57,-7,35],
+                    "Rotate": [51,0,88]
+                },
+                {
+                    "Name": "SuperiorFrontal",
+                    "ChineseName": "顶叶上回",
+                    "Label": 2029,
+                    "Center": [21,-49,50],
+                    "Rotate": [45,1,19]
+                },
+                {
+                    "Name": "Supramarginal",
+                    "ChineseName": "缘上回",
+                    "Label": 2031,
+                    "Center": [65,-15,21],
+                    "Rotate": [41,-64,127]
+                },
+                {
+                    "Name": "Pre Cuneus",
+                    "ChineseName": "楔前叶",
+                    "Label": 2025,
+                    "Center": [0,-42,26],
+                    "Rotate": [93,-6,-92]
+                }
+            ]
+        },
+        {
+            "Name": "Frontal",
+            "ChineseName": "额叶",
+            "Areas": [
+                {
+                    "Name": "CaudalMiddleFrontal",
+                    "ChineseName": "额中回上部",
+                    "Label": 2003,
+                    "Center": [45,36,33],
+                    "Rotate": [-46,21,-32]
+                },
+                {
+                    "Name": "LateralOrbitoFrontal",
+                    "ChineseName": "外侧眶额",
+                    "Label": 2012,
+                    "Center": [24,54,-45],
+                    "Rotate": [-17,166,-3]
+                },
+                {
+                    "Name": "Medial Orbito Frontal",
+                    "ChineseName": "内侧眶额",
+                    "Label": 2014,
+                    "Center": [1,69,-31],
+                    "Rotate": [0,-86,-6]
+                },
+                {
+                    "Name": "Pars Opercularis",
+                    "ChineseName": "额下回后部",
+                    "Label": 2018,
+                    "Center": [62,37,6],
+                    "Rotate": [70,15,99]
+                },
+                {
+                    "Name": "Pars Orbitalis",
+                    "ChineseName": "额下回眶部",
+                    "Label": 2019,
+                    "Center": [49,61,-36],
+                    "Rotate": [131,-1,119]
+                },
+                {
+                    "Name": "Pars Trianglaris",
+                    "ChineseName": "额下回三角部",
+                    "Label": 2020,
+                    "Center": [61,51,-15],
+                    "Rotate": [90,-25,108]
+                },
+                {
+                    "Name": "Pre Central",
+                    "ChineseName": "中央前回",
+                    "Label": 2024,
+                    "Center": [58,21,26],
+                    "Rotate": [59,-17,124]
+                },
+                {
+                    "Name": "Rostral Middle Frontal",
+                    "ChineseName": "额中回下部",
+                    "Label": 2027,
+                    "Center": [41,74,0],
+                    "Rotate": [62,-40,149]
+                },
+                {
+                    "Name": "Superior Frontal",
+                    "ChineseName": "额上回",
+                    "Label": 2028,
+                    "Center": [15,71,24],
+                    "Rotate": [45,-19,178]
+                },
+                {
+                    "Name": "Front Pole",
+                    "ChineseName": "额极",
+                    "Label": 2032,
+                    "Center": [13,88,-30],
+                    "Rotate": [103,-5,177]
+                }        
+            ]
+        },
+        {
+            "Name": "Occipital",
+            "ChineseName": "枕叶",
+            "Areas": [
+                {
+                    "Name": "Cuneus",
+                    "ChineseName": "楔形区",
+                    "Label": 2005,
+                    "Center": [2,-68,1],
+                    "Rotate": [89,69,-82]
+                },
+                {
+                    "Name": "Lateral Occipital",
+                    "ChineseName": "枕叶外侧",
+                    "Label": 2011,
+                    "Center": [35,-80,-15],
+                    "Rotate": [70,7,44]
+                },
+                {
+                    "Name": "Lingual",
+                    "ChineseName": "舌回",
+                    "Label": 2013,
+                    "Center": [5,-46,-21],
+                    "Rotate": [123,18,-105]
+                },
+                {
+                    "Name": "Pericalcarine",
+                    "ChineseName": "距状旁回",
+                    "Label": 2021,
+                    "Center": [3,-69,-15],
+                    "Rotate": [86,66,-78]
+                }
+            ]
+        },
+        {
+            "Name": "Limbic System",
+            "ChineseName": "边缘系统",
+            "Areas": [
+                {
+                    "Name": "Caudal Anterior Cingulate",
+                    "ChineseName": "前扣带回上部",
+                    "Label": 2002,
+                    "Center": [0,40,8],
+                    "Rotate": [91,-40,-91]
+                },
+                {
+                    "Name": "Isthmus Of Cingulate Gyrus",
+                    "ChineseName": "峡部扣带回",
+                    "Label": 2010,
+                    "Center": [0,-28,6],
+                    "Rotate": [90,34,-89]
+                },
+                {
+                    "Name": "Posterior Cingulate",
+                    "ChineseName": "扣带回后部",
+                    "Label": 2023,
+                    "Center": [0,8,19],
+                    "Rotate": [86,-27,-88]
+                },
+                {
+                    "Name": "Rostral Anterior Cingulate",
+                    "ChineseName": "前扣带回后部",
+                    "Label": 2026,
+                    "Center": [0,53,-15],
+                    "Rotate": [82,-44,-92]
+                }
+            ]
+        },
+        {
+            "Name": "Insula",
+            "ChineseName": "岛页",
+            "Areas":[
+                {
+                    "Name": "Insula",
+                    "ChineseName": "岛回",
+                    "Label": 2035,
+                    "Center": [0,0,0],
+                    "Rotate": [0,0,0]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,600 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>qml;cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>qrc;rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Header">
+      <UniqueIdentifier>{227e93b6-6021-49e9-9e2a-3248e3d26216}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\PatientAdminPage">
+      <UniqueIdentifier>{fc812e0e-748e-4074-8cf3-8368b134b269}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\StatisticsPage">
+      <UniqueIdentifier>{ced243bd-8ae4-4f12-b9de-8a538ec5cb30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\LoginPage">
+      <UniqueIdentifier>{ba0e6a6e-42ab-4e2a-a34f-9f0a655af8f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Header">
+      <UniqueIdentifier>{901b43e0-89c3-434c-b668-506f8706f2f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\LoginPage">
+      <UniqueIdentifier>{338c0b76-2463-49e5-8771-b50a9b711ca3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\StatisticsPage">
+      <UniqueIdentifier>{f3b1526c-d290-4687-a502-c95baec3b886}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\PatientAdminPage">
+      <UniqueIdentifier>{5d129639-5ec8-40cb-8f6d-e54ce03d288f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\MainFrame">
+      <UniqueIdentifier>{a9388c08-ef49-4427-8c67-c9fd782580fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\MainFrame">
+      <UniqueIdentifier>{d174557a-faf9-42f0-a3cd-90414f9577ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\TrainPage">
+      <UniqueIdentifier>{37768089-0c9e-45ab-a4f6-9218a24acad5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\TrainPage">
+      <UniqueIdentifier>{921c6a6f-ca81-43d1-a87f-8974f705daaf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\StandardTreatmentPage">
+      <UniqueIdentifier>{6bf0dcf5-1bd4-4936-8ecf-d09732702137}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\StandardTreatmentPage">
+      <UniqueIdentifier>{a4be6b9f-b485-4315-8ffa-0403dfa0f916}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Form Files\TrainPage">
+      <UniqueIdentifier>{a7c3a714-6510-4cc0-b867-4f4dd84a3d20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Form Files\StandardTreatmentPage">
+      <UniqueIdentifier>{319cd790-f906-4c22-999d-c429eafb9ca7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Form Files\StatisticsPage">
+      <UniqueIdentifier>{1274769d-69fd-455a-8a34-c9836c422d10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Form Files\PatientAdminPage">
+      <UniqueIdentifier>{bb73c2ca-ae34-4bcb-ab53-e9cec3ae69b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Form Files\Common">
+      <UniqueIdentifier>{00b941f1-fad3-4260-91c9-0102c6eb504b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Common">
+      <UniqueIdentifier>{d098ae4f-3d75-41ef-9d96-0ef609c819f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Common">
+      <UniqueIdentifier>{c7192ae8-0614-4b70-8e77-210c05286111}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\TrainPage\Detect">
+      <UniqueIdentifier>{19348f52-aa3c-40ef-8788-f41f8eef0cb6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\TrainPage\TrainRecord">
+      <UniqueIdentifier>{ce84a5dd-c2b5-43fa-bc7d-ccbcc1b489fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\TrainPage\ChannelPlan">
+      <UniqueIdentifier>{1ca08074-39ed-4f76-98e1-e694ec486d91}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\TrainPage\TreatmentCfg">
+      <UniqueIdentifier>{7d83c454-f880-4de8-9acb-f11acca92503}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\TrainPage\TrainRecord">
+      <UniqueIdentifier>{fe82f6d1-8a08-492c-b622-9ad81c8f56d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Form Files\TrainPage\TrainRecord">
+      <UniqueIdentifier>{f6368353-af80-4f34-ad1a-d03fa8c97f69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Form Files\TrainPage\ChannelPlan">
+      <UniqueIdentifier>{e8a4259f-5dff-454e-9294-0bf64665b11f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\TrainPage\Binding">
+      <UniqueIdentifier>{74795c22-bdad-4e1f-a64f-b8eb53196668}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\TrainPage\Detect">
+      <UniqueIdentifier>{b98f0536-afb5-4147-b0c5-e5989169f057}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\TrainPage\ChannelPlan">
+      <UniqueIdentifier>{a67473b6-054d-468a-8705-3912e11279be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\TrainPage\Binding">
+      <UniqueIdentifier>{e6ab9b81-45b5-4a01-bcaf-aad16792e250}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\TrainPage\TreatmentCfg">
+      <UniqueIdentifier>{6b8a896b-0f29-4697-b870-63543a28442d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Form Files\TrainPage\Playback">
+      <UniqueIdentifier>{2f196f21-966e-4727-aa80-7a4b8f09856e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Form Files\TrainPage\Detect">
+      <UniqueIdentifier>{07c359dd-dc96-4c19-a2f4-4832992dafd4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SystemSettings">
+      <UniqueIdentifier>{f8b583e9-aff7-4d17-972f-fe368e7147ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SystemSettings">
+      <UniqueIdentifier>{69833d52-066f-48ef-baa3-b266c8ee21fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Form Files\SystemSettings">
+      <UniqueIdentifier>{da23fb9c-06e0-4cdd-8ec6-cefac5845104}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Form Files\CUserInfo">
+      <UniqueIdentifier>{7599f837-7389-4fbf-ba5d-1c748c0c69e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\CUserInfo">
+      <UniqueIdentifier>{8761c033-d7b9-4b8f-a8d5-e14418c21e7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\CUserInfo">
+      <UniqueIdentifier>{4d798f9b-f011-4dc3-b085-c44c976664fe}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="Optimus.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <QtUic Include="Optimus.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtMoc Include="Optimus.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Header\Header.cpp">
+      <Filter>Source Files\Header</Filter>
+    </ClCompile>
+    <ClCompile Include="PatientAdminPage\CPatientAdminPage.cpp">
+      <Filter>Source Files\PatientAdminPage</Filter>
+    </ClCompile>
+    <ClCompile Include="StatisticsPage\StatisticsPage.cpp">
+      <Filter>Source Files\StatisticsPage</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrame\MainFrame.cpp">
+      <Filter>Source Files\MainFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="TrainPage\TrainPage.cpp">
+      <Filter>Source Files\TrainPage</Filter>
+    </ClCompile>
+    <ClCompile Include="StandardTreatmentPage\StandardTreatmentPage.cpp">
+      <Filter>Source Files\StandardTreatmentPage</Filter>
+    </ClCompile>
+    <ClCompile Include="Optimus.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CProgressDialog.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="CDragableDialog.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="CProgressDialog.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="CColorGradientWidget.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="TrainPage\CCreateEvent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CChannelSelectorCard.cpp">
+      <Filter>Source Files\TrainPage\Detect</Filter>
+    </ClCompile>
+    <ClCompile Include="CChannelSelectorRow.cpp">
+      <Filter>Source Files\TrainPage\Detect</Filter>
+    </ClCompile>
+    <ClCompile Include="CFilterSettingDialog.cpp">
+      <Filter>Source Files\TrainPage\Detect</Filter>
+    </ClCompile>
+    <ClCompile Include="CHidedChannelCard.cpp">
+      <Filter>Source Files\TrainPage\Detect</Filter>
+    </ClCompile>
+    <ClCompile Include="CImpedanceWidget.cpp">
+      <Filter>Source Files\TrainPage\Detect</Filter>
+    </ClCompile>
+    <ClCompile Include="TrainPage\CTrainRecord.cpp">
+      <Filter>Source Files\TrainPage\TrainRecord</Filter>
+    </ClCompile>
+    <ClCompile Include="TrainPage\CChannelPlanWidget.cpp">
+      <Filter>Source Files\TrainPage\ChannelPlan</Filter>
+    </ClCompile>
+    <ClCompile Include="TrainPage\CChannelMapWidget.cpp">
+      <Filter>Source Files\TrainPage\ChannelPlan</Filter>
+    </ClCompile>
+    <ClCompile Include="TrainPage\COscillograph.cpp">
+      <Filter>Source Files\TrainPage\Detect</Filter>
+    </ClCompile>
+    <ClCompile Include="TrainPage\CTreatmentCfg.cpp">
+      <Filter>Source Files\TrainPage\TreatmentCfg</Filter>
+    </ClCompile>
+    <ClCompile Include="CTrainRecordComponent.cpp">
+      <Filter>Source Files\TrainPage\TrainRecord</Filter>
+    </ClCompile>
+    <ClCompile Include="TrainPage\CDetect.cpp">
+      <Filter>Source Files\TrainPage\Detect</Filter>
+    </ClCompile>
+    <ClCompile Include="TrainPage\CBinding.cpp">
+      <Filter>Source Files\TrainPage\Binding</Filter>
+    </ClCompile>
+    <ClCompile Include="CDetectToolbar.cpp">
+      <Filter>Source Files\TrainPage\Detect</Filter>
+    </ClCompile>
+    <ClCompile Include="CPlaybackToolbar.cpp">
+      <Filter>Source Files\TrainPage\Detect</Filter>
+    </ClCompile>
+    <ClCompile Include="CDetectToolbar.cpp">
+      <Filter>Source Files\TrainPage\Detect</Filter>
+    </ClCompile>
+    <ClCompile Include="CPlaybackToolbar.cpp">
+      <Filter>Source Files\TrainPage\Detect</Filter>
+    </ClCompile>
+    <ClCompile Include="TrainPage\CEventButton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TrainPage\CEventWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CNxMessageBox.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="CColorGradientWidget.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="CDragableDialog.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="CHeatMap.cpp">
+      <Filter>Source Files\TrainPage\Detect</Filter>
+    </ClCompile>
+    <ClCompile Include="CHeatMap.cpp">
+      <Filter>Source Files\TrainPage\Detect</Filter>
+    </ClCompile>
+    <ClCompile Include="StandardTreatmentPage\CCourseAllocationWidget.cpp">
+      <Filter>Source Files\StatisticsPage</Filter>
+    </ClCompile>
+    <ClCompile Include="CPatientInfoCard.cpp">
+      <Filter>Source Files\PatientAdminPage</Filter>
+    </ClCompile>
+    <ClCompile Include="CPatientInfoCard.cpp">
+      <Filter>Source Files\PatientAdminPage</Filter>
+    </ClCompile>
+    <ClCompile Include="CPatientInfo.cpp">
+      <Filter>Source Files\PatientAdminPage</Filter>
+    </ClCompile>
+    <ClCompile Include="CRecordFace.cpp">
+      <Filter>Source Files\PatientAdminPage</Filter>
+    </ClCompile>
+    <ClCompile Include="CRecordFace.cpp">
+      <Filter>Source Files\PatientAdminPage</Filter>
+    </ClCompile>
+    <ClCompile Include="CIllnessInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SystemSettings\CSystemSettings.cpp">
+      <Filter>Source Files\SystemSettings</Filter>
+    </ClCompile>
+    <ClCompile Include="UserManage\CUserInfo.cpp">
+      <Filter>Source Files\CUserInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="SystemSettings\CSwitchButton.cpp">
+      <Filter>Source Files\SystemSettings</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginPage\CLoadingScreen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CExportEEGDialog.cpp">
+      <Filter>Source Files\TrainPage\Detect</Filter>
+    </ClCompile>
+    <ClCompile Include="CProgressBarDialog.cpp">
+      <Filter>Header Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="CProgressBarDialog.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginPage\CLoginPage.cpp">
+      <Filter>Source Files\LoginPage</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="cpp.hint" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="MainFrame.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="Header.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="TrainPage.ui">
+      <Filter>Form Files\TrainPage</Filter>
+    </QtUic>
+    <QtUic Include="TreatmentCfg.ui">
+      <Filter>Form Files\TrainPage</Filter>
+    </QtUic>
+    <QtUic Include="Binding.ui">
+      <Filter>Form Files\TrainPage</Filter>
+    </QtUic>
+    <QtUic Include="StandardTreatmentPage.ui">
+      <Filter>Form Files\StandardTreatmentPage</Filter>
+    </QtUic>
+    <QtUic Include="StatisticsPage.ui">
+      <Filter>Form Files\StatisticsPage</Filter>
+    </QtUic>
+    <QtUic Include="CPatientAdminPage.ui">
+      <Filter>Form Files\PatientAdminPage</Filter>
+    </QtUic>
+    <QtUic Include="CProgressDialog.ui">
+      <Filter>Form Files\Common</Filter>
+    </QtUic>
+    <QtUic Include="CColorGradientWidget.ui">
+      <Filter>Form Files\Common</Filter>
+    </QtUic>
+    <QtUic Include="TrainPage\CCreateEvent.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="TrainRecord.ui">
+      <Filter>Form Files\TrainPage\TrainRecord</Filter>
+    </QtUic>
+    <QtUic Include="CTrainRecordComponent.ui">
+      <Filter>Form Files\TrainPage\TrainRecord</Filter>
+    </QtUic>
+    <QtUic Include="CChannelMapWidget.ui">
+      <Filter>Form Files\TrainPage\ChannelPlan</Filter>
+    </QtUic>
+    <QtUic Include="CChannelPlanWidget.ui">
+      <Filter>Form Files\TrainPage\ChannelPlan</Filter>
+    </QtUic>
+    <QtUic Include="Detect.ui">
+      <Filter>Form Files\TrainPage\Detect</Filter>
+    </QtUic>
+    <QtUic Include="CPlaybackToolbar.ui">
+      <Filter>Form Files\TrainPage\Detect</Filter>
+    </QtUic>
+    <QtUic Include="CImpedanceWidget.ui">
+      <Filter>Form Files\TrainPage\Detect</Filter>
+    </QtUic>
+    <QtUic Include="CHidedChannelCard.ui">
+      <Filter>Form Files\TrainPage\Detect</Filter>
+    </QtUic>
+    <QtUic Include="CFilterSettingDialog.ui">
+      <Filter>Form Files\TrainPage\Detect</Filter>
+    </QtUic>
+    <QtUic Include="CChannelSelectorRow.ui">
+      <Filter>Form Files\TrainPage\Detect</Filter>
+    </QtUic>
+    <QtUic Include="CChannelSelectorCard.ui">
+      <Filter>Form Files\TrainPage\Detect</Filter>
+    </QtUic>
+    <QtUic Include="Oscillograph.ui">
+      <Filter>Form Files\TrainPage\Detect</Filter>
+    </QtUic>
+    <QtUic Include="CDetectToolbar.ui">
+      <Filter>Form Files\TrainPage\Detect</Filter>
+    </QtUic>
+    <QtUic Include="CPlaybackToolbar.ui">
+      <Filter>Form Files\TrainPage\Detect</Filter>
+    </QtUic>
+    <QtUic Include="TrainPage\CEventWidget.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="CNxMessageBox.ui">
+      <Filter>Form Files\Common</Filter>
+    </QtUic>
+    <QtUic Include="CHeatMap.ui">
+      <Filter>Form Files\TrainPage\Detect</Filter>
+    </QtUic>
+    <QtUic Include="CPatientInfoCard.ui">
+      <Filter>Form Files\PatientAdminPage</Filter>
+    </QtUic>
+    <QtUic Include="CPatientInfo.ui">
+      <Filter>Form Files\PatientAdminPage</Filter>
+    </QtUic>
+    <QtUic Include="CRecordFace.ui">
+      <Filter>Form Files\PatientAdminPage</Filter>
+    </QtUic>
+    <QtUic Include="CIllnessInfo.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="LoginPage\CLoginPage.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="SystemSettings\CSystemSettings.ui">
+      <Filter>Form Files\SystemSettings</Filter>
+    </QtUic>
+    <QtUic Include="UserManage\CUserInfo.ui">
+      <Filter>Form Files\CUserInfo</Filter>
+    </QtUic>
+    <QtUic Include="LoginPage\CLoadingScreen.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="StandardTreatmentPage\CCourseAllocationWidget.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="CExportEEGDialog.ui">
+      <Filter>Form Files\TrainPage\Detect</Filter>
+    </QtUic>
+    <QtUic Include="CProgressBarDialog.ui">
+      <Filter>Form Files\Common</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="MainFrame\MainFrame.h">
+      <Filter>Header Files\MainFrame</Filter>
+    </QtMoc>
+    <QtMoc Include="Header\Header.h">
+      <Filter>Header Files\Header</Filter>
+    </QtMoc>
+    <QtMoc Include="PatientAdminPage\CPatientAdminPage.h">
+      <Filter>Header Files\PatientAdminPage</Filter>
+    </QtMoc>
+    <QtMoc Include="TrainPage\TrainPage.h">
+      <Filter>Header Files\TrainPage</Filter>
+    </QtMoc>
+    <QtMoc Include="StatisticsPage\StatisticsPage.h">
+      <Filter>Header Files\StatisticsPage</Filter>
+    </QtMoc>
+    <QtMoc Include="StandardTreatmentPage\StandardTreatmentPage.h">
+      <Filter>Header Files\StandardTreatmentPage</Filter>
+    </QtMoc>
+    <QtMoc Include="CProgressDialog.h">
+      <Filter>Header Files\Common</Filter>
+    </QtMoc>
+    <QtMoc Include="CDragableDialog.h">
+      <Filter>Header Files\Common</Filter>
+    </QtMoc>
+    <QtMoc Include="CColorGradientWidget.h">
+      <Filter>Header Files\Common</Filter>
+    </QtMoc>
+    <QtMoc Include="CTrainRecordComponent.h">
+      <Filter>Header Files\TrainPage\TrainRecord</Filter>
+    </QtMoc>
+    <QtMoc Include="TrainPage\CDetect.h">
+      <Filter>Header Files\TrainPage\Detect</Filter>
+    </QtMoc>
+    <QtMoc Include="TrainPage\CChannelMapWidget.h">
+      <Filter>Header Files\TrainPage\ChannelPlan</Filter>
+    </QtMoc>
+    <QtMoc Include="TrainPage\CChannelPlanWidget.h">
+      <Filter>Header Files\TrainPage\ChannelPlan</Filter>
+    </QtMoc>
+    <QtMoc Include="CChannelSelectorCard.h">
+      <Filter>Header Files\TrainPage\Detect</Filter>
+    </QtMoc>
+    <QtMoc Include="CChannelSelectorRow.h">
+      <Filter>Header Files\TrainPage\Detect</Filter>
+    </QtMoc>
+    <QtMoc Include="CFilterSettingDialog.h">
+      <Filter>Header Files\TrainPage\Detect</Filter>
+    </QtMoc>
+    <QtMoc Include="CHidedChannelCard.h">
+      <Filter>Header Files\TrainPage\Detect</Filter>
+    </QtMoc>
+    <QtMoc Include="CImpedanceWidget.h">
+      <Filter>Header Files\TrainPage\Detect</Filter>
+    </QtMoc>
+    <QtMoc Include="TrainPage\COscillograph.h">
+      <Filter>Header Files\TrainPage\Detect</Filter>
+    </QtMoc>
+    <QtMoc Include="TrainPage\CBinding.h">
+      <Filter>Header Files\TrainPage\Binding</Filter>
+    </QtMoc>
+    <QtMoc Include="TrainPage\CTrainRecord.h">
+      <Filter>Header Files\TrainPage\TrainRecord</Filter>
+    </QtMoc>
+    <QtMoc Include="TrainPage\CTreatmentCfg.h">
+      <Filter>Header Files\TrainPage\TreatmentCfg</Filter>
+    </QtMoc>
+    <QtMoc Include="TrainPage\CCreateEvent.h">
+      <Filter>Header Files\TrainPage\Detect</Filter>
+    </QtMoc>
+    <QtMoc Include="CPlaybackToolbar.h">
+      <Filter>Header Files\TrainPage\Detect</Filter>
+    </QtMoc>
+    <QtMoc Include="CDetectToolbar.h">
+      <Filter>Header Files\TrainPage\Detect</Filter>
+    </QtMoc>
+    <QtMoc Include="CDetectToolbar.h">
+      <Filter>Header Files\TrainPage\Detect</Filter>
+    </QtMoc>
+    <QtMoc Include="TrainPage\CEventWidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="TrainPage\CEventButton.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="CNxMessageBox.h">
+      <Filter>Header Files\Common</Filter>
+    </QtMoc>
+    <QtMoc Include="CHeatMap.h">
+      <Filter>Header Files\TrainPage\Detect</Filter>
+    </QtMoc>
+    <QtMoc Include="CHeatMap.h">
+      <Filter>Header Files\TrainPage\Detect</Filter>
+    </QtMoc>
+    <QtMoc Include="StandardTreatmentPage\CCourseAllocationWidget.h">
+      <Filter>Header Files\StandardTreatmentPage</Filter>
+    </QtMoc>
+    <QtMoc Include="CPatientInfoCard.h">
+      <Filter>Header Files\PatientAdminPage</Filter>
+    </QtMoc>
+    <QtMoc Include="CPatientInfo.h">
+      <Filter>Header Files\PatientAdminPage</Filter>
+    </QtMoc>
+    <QtMoc Include="CRecordFace.h">
+      <Filter>Header Files\PatientAdminPage</Filter>
+    </QtMoc>
+    <QtMoc Include="CRecordFace.h">
+      <Filter>Header Files\PatientAdminPage</Filter>
+    </QtMoc>
+    <QtMoc Include="CIllnessInfo.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="LoginPage\CLoginPage.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="SystemSettings\CSystemSettings.h">
+      <Filter>Header Files\SystemSettings</Filter>
+    </QtMoc>
+    <QtMoc Include="UserManage\CUserInfo.h">
+      <Filter>Header Files\CUserInfo</Filter>
+    </QtMoc>
+    <QtMoc Include="SystemSettings\CSwitchButton.h">
+      <Filter>Header Files\SystemSettings</Filter>
+    </QtMoc>
+    <QtMoc Include="LoginPage\CLoadingScreen.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="CExportEEGDialog.h">
+      <Filter>Header Files\TrainPage\Detect</Filter>
+    </QtMoc>
+    <QtMoc Include="CProgressBarDialog.h">
+      <Filter>Header Files\Common</Filter>
+    </QtMoc>
+    <QtMoc Include="CExportEEGDialog.h">
+      <Filter>Header Files\TrainPage\Detect</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <QtTranslation Include="Optimus_zh_CN.ts">
+      <Filter>Translation Files</Filter>
+    </QtTranslation>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Optimus.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="images\common\logo.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

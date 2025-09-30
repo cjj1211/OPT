@@ -1,0 +1,7 @@
+{
+    "DetectorCenter":[-35.1215, 101.9127, 58.6259],
+    "DetectorNormal":[0,0,1],
+    "ProbeCenter":[33.9345, 29.21, 0.02],
+    "ProbeNormal": [0, 1, 0],
+    "Color": [255,255,255]
+}

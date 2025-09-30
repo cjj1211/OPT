@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>qml;cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>qrc;rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts</Extensions>
+    </Filter>
+    <Filter Include="Header Files\grpc">
+      <UniqueIdentifier>{014f127f-2c90-4231-9524-58a75fb2c798}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\grpc">
+      <UniqueIdentifier>{458b5dcb-02ca-4464-8e44-1ca23224063a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="nxcommunication_global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NxMessage.grpc.pb.h">
+      <Filter>Header Files\grpc</Filter>
+    </ClInclude>
+    <ClInclude Include="NxMessage.pb.h">
+      <Filter>Header Files\grpc</Filter>
+    </ClInclude>
+    <ClInclude Include="Recorder.grpc.pb.h">
+      <Filter>Header Files\grpc</Filter>
+    </ClInclude>
+    <ClInclude Include="Recorder.pb.h">
+      <Filter>Header Files\grpc</Filter>
+    </ClInclude>
+    <ClInclude Include="DiscreteList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Master.grpc.pb.h">
+      <Filter>Header Files\grpc</Filter>
+    </ClInclude>
+    <ClInclude Include="Master.pb.h">
+      <Filter>Header Files\grpc</Filter>
+    </ClInclude>
+    <ClInclude Include="CMasterServer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CMasterServerImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CBackupResImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CBackupResClient.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RecorderClient.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RecorderClientImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="RecorderClient.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RecorderClientImpl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NxMessage.grpc.pb.cc">
+      <Filter>Source Files\grpc</Filter>
+    </ClCompile>
+    <ClCompile Include="NxMessage.pb.cc">
+      <Filter>Source Files\grpc</Filter>
+    </ClCompile>
+    <ClCompile Include="Recorder.grpc.pb.cc">
+      <Filter>Source Files\grpc</Filter>
+    </ClCompile>
+    <ClCompile Include="Recorder.pb.cc">
+      <Filter>Source Files\grpc</Filter>
+    </ClCompile>
+    <ClCompile Include="DiscreteList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Master.grpc.pb.cc">
+      <Filter>Source Files\grpc</Filter>
+    </ClCompile>
+    <ClCompile Include="Master.pb.cc">
+      <Filter>Source Files\grpc</Filter>
+    </ClCompile>
+    <ClCompile Include="CMasterServer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CMasterServerImpl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CBackupResClient.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CBackupResImpl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

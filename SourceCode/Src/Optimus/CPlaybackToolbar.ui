@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CPlaybackToolbarClass</class>
+ <widget class="QWidget" name="CPlaybackToolbarClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1145</width>
+    <height>81</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>CPlaybackToolbar</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#CPlaybackToolbarClass {
+background-color:#1F3369;
+border: 1px solid #4B68B3;
+}
+
+QLabel{
+font-size: 16px;
+font-weight: normal;
+text-align: right;
+color: #ffffff;
+}</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout_2">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <property name="spacing">
+      <number>15</number>
+     </property>
+     <property name="leftMargin">
+      <number>21</number>
+     </property>
+     <property name="rightMargin">
+      <number>21</number>
+     </property>
+     <item>
+      <widget class="QPushButton" name="playBtn">
+       <property name="minimumSize">
+        <size>
+         <width>22</width>
+         <height>22</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>22</width>
+         <height>22</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(255,255,255,0);
+border:None;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="Optimus.qrc">
+         <normaloff>:/Optimus/images/trainPage/play.svg</normaloff>
+         <normalon>:/Optimus/images/trainPage/pause.svg</normalon>:/Optimus/images/trainPage/play.svg</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>22</width>
+         <height>22</height>
+        </size>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QSlider" name="playbackSlider">
+       <property name="styleSheet">
+        <string notr="true">QSlider::groove:horizontal {
+border: 0px solid #bbb;
+}
+
+
+QSlider::sub-page:horizontal {
+background: #5EBCCE;
+border-radius: 2px;
+margin-top:8px;
+margin-bottom:8px;
+}
+
+/*2.未滑动过的槽设计参数*/
+QSlider::add-page:horizontal {
+/*槽颜色*/
+background: rgba(242,242, 242,0.19);
+/*外环大小0px就是不显示，默认也是0*/
+border: 0px solid #777;
+/*外环区域倒圆角度*/
+border-radius: 2px;
+ /*上遮住区域高度*/
+margin-top:9px;
+ /*下遮住区域高度*/
+margin-bottom:9px;
+}
+ 
+
+QSlider::handle:horizontal {
+background:#5EBCCE;
+width: 15px;
+border: 0px solid rgb(193,204,208);
+border-radius: 2px; 
+margin-top:6px;
+margin-bottom:6px;
+}
+
+/*4.手动拉动时显示的滑块设计参数*/
+QSlider::handle:horizontal:hover {
+/*滑块颜色*/
+background: #5EBCCE;
+/*滑块的宽度*/
+width: 15px;
+/*滑块外环为1px，再加颜色*/
+border: 0px solid rgb(193,204,208);
+ /*滑块外环倒圆角度*/
+border-radius: 5px; 
+ /*上遮住区域高度*/
+margin-top:4px;
+ /*下遮住区域高度*/
+margin-bottom:4px;
+}
+————————————————
+版权声明：本文为CSDN博主「神迷岛」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/pengrunxin/article/details/121431619</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="runtimeLabel">
+       <property name="text">
+        <string>000:00:00</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>/</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="timeLenLabel">
+       <property name="text">
+        <string>000:00:00</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="spikeScopeBtn">
+       <property name="minimumSize">
+        <size>
+         <width>93</width>
+         <height>34</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Spike</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="impedanceBtn">
+       <property name="minimumSize">
+        <size>
+         <width>93</width>
+         <height>34</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Impedance</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="exportBtn">
+       <property name="minimumSize">
+        <size>
+         <width>94</width>
+         <height>34</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Export</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="backBtn">
+       <property name="minimumSize">
+        <size>
+         <width>94</width>
+         <height>34</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Back</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="Optimus.qrc"/>
+ </resources>
+ <connections/>
+</ui>

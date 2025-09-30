@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CDetectToolbarClass</class>
+ <widget class="QWidget" name="CDetectToolbarClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1057</width>
+    <height>96</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>CDetectToolbar</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#CDetectToolbarClass {
+background-color:#1F3369;
+border: 1px solid #4B68B3;
+}</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout_2">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <layout class="QHBoxLayout" name="detectToolbarLayout">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <item>
+      <spacer name="horizontalSpacer_5">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Fixed</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>30</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="startBtn">
+       <property name="minimumSize">
+        <size>
+         <width>22</width>
+         <height>22</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>22</width>
+         <height>22</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="Optimus.qrc">
+         <normaloff>:/Optimus/images/trainPage/play.svg</normaloff>
+         <normalon>:/Optimus/images/trainPage/pause.svg</normalon>:/Optimus/images/trainPage/play.svg</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>22</width>
+         <height>22</height>
+        </size>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_7">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Fixed</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>26</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="recordBtn">
+       <property name="minimumSize">
+        <size>
+         <width>22</width>
+         <height>22</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>22</width>
+         <height>22</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(255, 255, 255,0);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="Optimus.qrc">
+         <normaloff>:/Optimus/images/trainPage/record.svg</normaloff>
+         <normalon>:/Optimus/images/trainPage/recordPause.svg</normalon>:/Optimus/images/trainPage/record.svg</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>22</width>
+         <height>22</height>
+        </size>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_3">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Fixed</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>25</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QLabel" name="timestamp">
+       <property name="styleSheet">
+        <string notr="true">width: 105px;
+height: 36px;
+background: rgba(255,255,255,0.00);
+border-radius: 4px;
+font-size: 16px;
+font-weight: normal;
+color: #ffffff;
+line-height: 53px;</string>
+       </property>
+       <property name="text">
+        <string>000:00:00</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="spikeBtn">
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+width: 94px;
+height: 34px;
+background: #1890ff;
+border-radius: 4px;
+font-size: 16px;
+font-weight: normal;
+color: rgba(255,255,255,0.85);
+
+}
+
+QPushButton::hover {
+width: 94px;
+height: 34px;
+background: #1890ff;
+border-radius: 4px;
+font-size: 16px;
+font-weight: normal;
+color: rgba(255,255,255,1);
+
+}</string>
+       </property>
+       <property name="text">
+        <string>Spike</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Fixed</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>12</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="impedanceBtn">
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+width: 94px;
+height: 34px;
+background: #1890ff;
+border-radius: 4px;
+font-size: 16px;
+font-weight: normal;
+color: rgba(255,255,255,0.85);
+
+}
+
+QPushButton::hover {
+width: 94px;
+height: 34px;
+background: #1890ff;
+border-radius: 4px;
+font-size: 16px;
+font-weight: normal;
+color: rgba(255,255,255,1);
+
+}</string>
+       </property>
+       <property name="text">
+        <string>Impedance</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_8">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Fixed</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>12</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="channelMapBtn">
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+width: 94px;
+height: 34px;
+background: #1890ff;
+border-radius: 4px;
+font-size: 16px;
+font-weight: normal;
+color: rgba(255,255,255,0.85);
+
+}
+
+QPushButton::hover {
+width: 94px;
+height: 34px;
+background: #1890ff;
+border-radius: 4px;
+font-size: 16px;
+font-weight: normal;
+color: rgba(255,255,255,1);
+
+}</string>
+       </property>
+       <property name="text">
+        <string>Channel Map</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_6">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Fixed</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>35</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="Optimus.qrc"/>
+ </resources>
+ <connections/>
+</ui>

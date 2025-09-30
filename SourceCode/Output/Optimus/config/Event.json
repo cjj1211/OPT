@@ -1,0 +1,42 @@
+[
+    {
+        "color": "#ec4f9a",
+        "name": "睁眼"
+    },
+    {
+        "color": "#c280ff",
+        "name": "进食"
+    },
+    {
+        "color": "#bfbf00",
+        "name": "闭眼"
+    },
+    {
+        "color": "#9FA4EF",
+        "name": "活动"
+    },
+    {
+        "color": "#EC4F9A",
+        "name": "眨眼"
+    },
+    {
+        "color": "#F65B64",
+        "name": "握拳"
+    },
+    {
+        "color": "#51cbff",
+        "name": "清醒"
+    },
+    {
+        "color": "#f9941c",
+        "name": "睡觉"
+    },
+    {
+        "color": "#24c4bb",
+        "name": "困倦"
+    },
+    {
+        "color": "#ec4f9a",
+        "name": "打游戏"
+    }
+]

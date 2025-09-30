@@ -1,0 +1,91 @@
+﻿#pragma once
+#include "nxelectrodemap_global.h"
+#include <QVector>
+BEGIN_NX_NAMESPACE
+typedef struct Text_ {
+    float x;
+    float y;
+    float bottomLeftX;
+    float bottomLeftY;
+    float topLeftX;
+    float topLeftY;
+    float bottomRightX;
+    float bottomRightY;
+    float rotation;
+    float fontHeight;
+    QString fontColor;
+    QString textAlignment;
+    QString text;
+} Text;
+typedef struct Line_ {
+    float x1;
+    float x2;
+    float y1;
+    float y2;
+    QString lineColor;
+} Line;
+typedef struct ElectrodeSite_ {
+    std::string channelNumber;
+    float x;
+    float y;
+    float siteWidth;
+    float siteHeight;
+    QString siteShape;
+    QString siteOutlineColor;
+    float boundXMin;
+    float boundXMax;
+    float boundYMin;
+    float boundYMax;
+    QString customName;
+    QString portName;
+    bool highlighted;
+    bool enabled;
+    bool linked;
+    QString color;
+    bool impedanceValid;
+    float impedanceMag;
+    float impedancePhase;
+    float heatScale;
+} ElectrodeSite;
+typedef struct Group_ {
+    QString name;
+    QString siteOutlineColor;
+    QString siteShape;
+    float siteWidth;
+    float siteHeight;
+    QVector<ElectrodeSite> electrodeSites;
+} Group;
+typedef struct Page_ {
+    QString name;
+    QString backgroundColor;
+    QString siteOutlineColor;
+    QString lineColor;
+    float fontHeight;
+    QString fontColor;
+    QString textAlignment;
+    QString siteShape;
+    float siteWidth;
+    float siteHeight;
+    QVector<Group> ports;
+    QVector<Line> lines;
+    QVector<Text> texts;
+} Page;
+typedef struct ElectrodeMapSettings_ {
+    QString backgroundColor;
+    QString siteOutlineColor;
+    QString lineColor;
+    float fontHeight;
+    QString fontColor;
+    QString textAlignment;
+    QString siteShape;
+    float siteWidth;
+    float siteHeight;
+    int  row;
+    int colum;
+    int buttonsize;
+    int positionx;
+    int positiony;
+    int space;
+    QVector<Page> pages;
+} ElectrodeMapSettings;
+END_NX_NAMESPACE

@@ -1,0 +1,20 @@
+{
+    "Hospital": {
+        "HospitalName": "TestName",
+        "Department": "TestDepartment"
+    },
+    "Hardware": {
+        "EnableRecord":  true,
+        "EnableFilter": false,
+        "EnableGPU": true,
+        "EnableCompress": false,
+        "CommunicationMode": 0
+    },
+    "Display": {
+        "DisplayMode": 1
+    },
+    "Common": {
+        "Language": "zh-CN",
+        "EnableTestMode": false
+    }
+}

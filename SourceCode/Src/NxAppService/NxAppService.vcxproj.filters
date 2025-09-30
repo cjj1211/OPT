@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>qml;cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>qrc;rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts</Extensions>
+    </Filter>
+    <Filter Include="Header Files\DTO">
+      <UniqueIdentifier>{b2dd326c-1726-4fd4-bde6-44756dc0223e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Tools">
+      <UniqueIdentifier>{5e2241ad-53c3-418e-ab6a-64aa4ae28216}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Tools">
+      <UniqueIdentifier>{fe4e5f69-9d1f-487a-9e08-5b2d5f114cbd}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="nxappservice_global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClCompile Include="CPatientAdminService.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClInclude Include="WaveformDto.h">
+      <Filter>Header Files\DTO</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="IAppService.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CChannelPlanService.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CTreatmentRecordService.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CChannelNameService.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="COscillographService.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CCompressThread.cpp">
+      <Filter>Header Files\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="CCompressThread.cpp">
+      <Filter>Source Files\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="CStandardTreatmentService.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CTrainService.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CPlaybackService.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CUserService.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CCompressService.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CLoginService.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CMainFrameService.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CRestoreService.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CWebSocketService.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CWebSocketServer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HeartBeatThread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CPatientInfoService.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="IAppService.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="COscillographService.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="CTreatmentRecordService.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="CCompressThread.h">
+      <Filter>Header Files\Tools</Filter>
+    </QtMoc>
+    <QtMoc Include="CChannelNameService.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="CChannelPlanService.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="CPatientAdminService.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="CTrainService.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="CStandardTreatmentService.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="CPlaybackService.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="CUserService.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="CCompressService.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="CLoginService.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="CMainFrameService.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="CRestoreService.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="CWebSocketService.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="CWebSocketServer.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="HeartBeatThread.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="CPatientInfoService.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+</Project>

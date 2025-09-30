@@ -1,0 +1,54 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- none
+
+pool:
+  name: windows-x64
+
+steps:
+- script: |
+    echo on
+    nuget sources remove -Name NeuroXess
+    nuget sources remove -Name NXPlatform
+    nuget sources add -Username zhijie.song -Password Helloworld001 -source https://tfs.neuroxess.com/EEGRecorder/_packaging/NeuroXess/nuget/v3/index.json -name NeuroXess
+    nuget sources add -Username zhijie.song -Password Helloworld001 -source https://tfs.neuroxess.com/DefaultCollection/_packaging/NXPlatform/nuget/v3/index.json -name NXPlatform
+    nuget restore 
+  displayName: 'Restore Nuget'
+  workingDirectory: 'Src/'
+
+- script: |
+    echo Add other tasks to build, test, and deploy your project.
+    echo See https://aka.ms/yaml
+
+    echo QtToolsPath = %QtToolsPath%
+    echo QtMsBuild = %QtMsBuild%
+    echo MSBuildPath = %MSBuildPath%
+
+    echo Start build
+    # call "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\Build\vcvars64.bat"
+    MSBuild Optimus/Optimus.vcxproj /t:Rebuild /p:Configuration=Release /p:Platform=x64
+  displayName: 'Build Optimus'
+  workingDirectory: 'Src/'  
+  env:
+    QtMsBuild: E:\AzureDevOpsPool\QtMsBuild
+    QtToolsPath: C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\bin
+    MSBuildPath: C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64
+
+- script: |
+    echo on
+    echo %DEPLOYQT_TOOL_PATH%
+    windeployQt.bat "%DEPLOYQT_TOOL_PATH%"
+  displayName: 'Deploy Qt'
+  workingDirectory: 'Output\Optimus'
+
+- script: |
+    echo on
+    echo %InnoSetupPath%
+    "%INNO_SETUP_PATH%iscc.exe" package.iss /O"$(RELEASE_DIR)" /F"Optimus$(VERSION).$(Build.BuildNumber)"
+  displayName: 'Package'
+  workingDirectory: 'Output\Optimus'
+

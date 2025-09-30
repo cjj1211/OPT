@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<Optimus version="3.0.0">
+ <ProbeMapSettings backgroundColor="White" lineColor="Black" siteOutlineColor="Black" row="8" colum="8" buttonsize="45" positionx="400" positiony="100" space="45">
+  <Page name="Port A">
+   <Port name="G3"  siteWidth="8" siteHeight="8">
+   <ElectrodeSite channelNumber="19" x="0" y="0"/>
+    <ElectrodeSite channelNumber="24" x="0" y="1"/>
+    <ElectrodeSite channelNumber="28" x="0" y="2"/>
+    <ElectrodeSite channelNumber="31" x="0" y="3"/>
+    <ElectrodeSite channelNumber="35" x="0" y="4"/>
+    <ElectrodeSite channelNumber="37" x="0" y="5"/>
+    <ElectrodeSite channelNumber="43" x="0" y="6"/>
+    <ElectrodeSite channelNumber="44" x="0" y="7"/>
+
+    <ElectrodeSite channelNumber="18" x="1" y="0"/>
+    <ElectrodeSite channelNumber="22" x="1" y="1"/>
+    <ElectrodeSite channelNumber="25" x="1" y="2"/>
+    <ElectrodeSite channelNumber="29" x="1" y="3"/>
+    <ElectrodeSite channelNumber="32" x="1" y="4"/>
+    <ElectrodeSite channelNumber="38" x="1" y="5"/>
+    <ElectrodeSite channelNumber="42" x="1" y="6"/>
+    <ElectrodeSite channelNumber="45" x="1" y="7"/>
+
+
+    <ElectrodeSite channelNumber="16" x="2" y="0"/>
+    <ElectrodeSite channelNumber="21" x="2" y="1"/>
+    <ElectrodeSite channelNumber="26" x="2" y="2"/>
+    <ElectrodeSite channelNumber="30" x="2" y="3"/>
+    <ElectrodeSite channelNumber="34" x="2" y="4" />
+    <ElectrodeSite channelNumber="39" x="2" y="5"/>
+    <ElectrodeSite channelNumber="41" x="2" y="6"/>
+    <ElectrodeSite channelNumber="45" x="2" y="7"/>
+
+
+
+     <ElectrodeSite channelNumber="17" x="3" y="0" />
+    <ElectrodeSite channelNumber="20" x="3" y="1"/>
+    <ElectrodeSite channelNumber="23" x="3" y="2"/>
+    <ElectrodeSite channelNumber="27" x="3" y="3"/>
+   <ElectrodeSite channelNumber="33" x="3" y="4" />
+    <ElectrodeSite channelNumber="36" x="3" y="5"/>
+    <ElectrodeSite channelNumber="40" x="3" y="6"/>
+    <ElectrodeSite channelNumber="47" x="3" y="7"/>
+
+     <ElectrodeSite channelNumber="15" x="4" y="0" />
+    <ElectrodeSite channelNumber="14" x="4" y="1"/>
+    <ElectrodeSite channelNumber="13" x="4" y="2"/>
+    <ElectrodeSite channelNumber="12" x="4" y="3"/>
+   <ElectrodeSite channelNumber="51" x="4" y="4" />
+    <ElectrodeSite channelNumber="50" x="4" y="5"/>
+    <ElectrodeSite channelNumber="49" x="4" y="6"/>
+    <ElectrodeSite channelNumber="48" x="4" y="7"/>
+
+     <ElectrodeSite channelNumber="11" x="5" y="0" />
+    <ElectrodeSite channelNumber="10" x="5" y="1"/>
+    <ElectrodeSite channelNumber="9" x="5" y="2"/>
+    <ElectrodeSite channelNumber="8" x="5" y="3"/>
+   <ElectrodeSite channelNumber="55" x="5" y="4" />
+    <ElectrodeSite channelNumber="54" x="5" y="5"/>
+    <ElectrodeSite channelNumber="53" x="5" y="6"/>
+    <ElectrodeSite channelNumber="52" x="5" y="7"/>
+
+     <ElectrodeSite channelNumber="7" x="6" y="0" />
+    <ElectrodeSite channelNumber="6" x="6" y="1"/>
+    <ElectrodeSite channelNumber="5" x="6" y="2"/>
+    <ElectrodeSite channelNumber="4" x="6" y="3"/>
+   <ElectrodeSite channelNumber="59" x="6" y="4" />
+    <ElectrodeSite channelNumber="58" x="6" y="5"/>
+    <ElectrodeSite channelNumber="57" x="6" y="6"/>
+    <ElectrodeSite channelNumber="56" x="6" y="7"/>
+
+     <ElectrodeSite channelNumber="3" x="7" y="0" />
+    <ElectrodeSite channelNumber="2" x="7" y="1"/>
+    <ElectrodeSite channelNumber="1" x="7" y="2"/>
+    <ElectrodeSite channelNumber="0" x="7" y="3"/>
+   <ElectrodeSite channelNumber="63" x="7" y="4" />
+    <ElectrodeSite channelNumber="62" x="7" y="5"/>
+    <ElectrodeSite channelNumber="61" x="7" y="6"/>
+    <ElectrodeSite channelNumber="60" x="7" y="7"/>
+   </Port>
+  </Page>
+
+  
+ </ProbeMapSettings>
+</Optimus>

@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{FA0ECB9C-D29D-4A3A-940D-6D9981330D64}</ProjectGuid>
+    <Keyword>QtVS_v304</Keyword>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">10.0.22621.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">10.0.22621.0</WindowsTargetPlatformVersion>
+    <QtMsBuild Condition="'$(QtMsBuild)'=='' OR !Exists('$(QtMsBuild)\qt.targets')">$(SolutionDir)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="QtSettings">
+    <QtInstall>5.12.12_msvc2017_64</QtInstall>
+    <QtModules>core;xml;gui;widgets;concurrent</QtModules>
+    <QtBuildConfig>debug</QtBuildConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="QtSettings">
+    <QtInstall>5.12.12_msvc2017_64</QtInstall>
+    <QtModules>core;xml;gui;widgets;concurrent</QtModules>
+    <QtBuildConfig>release</QtBuildConfig>
+  </PropertyGroup>
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+    <Import Project="..\CommonProp\Debug_x64.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+    <Import Project="..\CommonProp\Release_x64.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>ORMPP_ENABLE_MYSQL;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>ORMPP_ENABLE_MYSQL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
+    <ClCompile>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="Configuration">
+    <ClCompile>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="CChannelSelectorRow.cpp" />
+    <ClCompile Include="CChannelSelectorCard.cpp" />
+    <ClCompile Include="CColorGradientWidget.cpp" />
+    <ClCompile Include="CExportEEGDialog.cpp" />
+    <ClCompile Include="CIllnessInfo.cpp" />
+    <ClCompile Include="CPatientInfo.cpp" />
+    <ClCompile Include="CDetectToolbar.cpp" />
+    <ClCompile Include="CDragableDialog.cpp" />
+    <ClCompile Include="CFilterSettingDialog.cpp" />
+    <ClCompile Include="CHeatMap.cpp" />
+    <ClCompile Include="CHidedChannelCard.cpp" />
+    <ClCompile Include="CImpedanceWidget.cpp" />
+    <ClCompile Include="CPatientInfoCard.cpp" />
+    <ClCompile Include="CPlaybackToolbar.cpp" />
+    <ClCompile Include="CProgressBarDialog.cpp" />
+    <ClCompile Include="CProgressDialog.cpp" />
+    <ClCompile Include="CRecordFace.cpp" />
+    <ClCompile Include="CTrainRecordComponent.cpp" />
+    <ClCompile Include="CNxMessageBox.cpp" />
+    <ClCompile Include="LoginPage\CLoadingScreen.cpp" />
+    <ClCompile Include="LoginPage\CLoginPage.cpp" />
+    <ClCompile Include="Optimus.cpp" />
+    <ClCompile Include="StandardTreatmentPage\CCourseAllocationWidget.cpp" />
+    <ClCompile Include="PatientAdminPage\CPatientAdminPage.cpp" />
+    <ClCompile Include="StandardTreatmentPage\StandardTreatmentPage.cpp" />
+    <ClCompile Include="StatisticsPage\StatisticsPage.cpp" />
+    <ClCompile Include="SystemSettings\CSwitchButton.cpp" />
+    <ClCompile Include="SystemSettings\CSystemSettings.cpp" />
+    <ClCompile Include="TrainPage\CBinding.cpp" />
+    <ClCompile Include="TrainPage\CChannelMapWidget.cpp" />
+    <ClCompile Include="TrainPage\CChannelPlanWidget.cpp" />
+    <ClCompile Include="TrainPage\CCreateEvent.cpp" />
+    <ClCompile Include="TrainPage\CDetect.cpp" />
+    <ClCompile Include="TrainPage\CEventButton.cpp" />
+    <ClCompile Include="TrainPage\CEventWidget.cpp" />
+    <ClCompile Include="TrainPage\COscillograph.cpp" />
+    <ClCompile Include="TrainPage\CTrainRecord.cpp" />
+    <ClCompile Include="TrainPage\CTreatmentCfg.cpp" />
+    <ClCompile Include="TrainPage\TrainPage.cpp" />
+    <ClCompile Include="UserManage\CUserInfo.cpp" />
+    <QtRcc Include="Optimus.qrc" />
+    <QtUic Include="Binding.ui" />
+    <QtUic Include="CChannelMapWidget.ui" />
+    <QtUic Include="CChannelPlanWidget.ui" />
+    <QtUic Include="CChannelSelectorCard.ui" />
+    <QtUic Include="CChannelSelectorRow.ui" />
+    <QtUic Include="CColorGradientWidget.ui" />
+    <QtUic Include="CExportEEGDialog.ui" />
+    <QtUic Include="CIllnessInfo.ui" />
+    <QtUic Include="CPatientInfo.ui" />
+    <QtUic Include="CDetectToolbar.ui" />
+    <QtUic Include="CFilterSettingDialog.ui" />
+    <QtUic Include="CHeatMap.ui" />
+    <QtUic Include="CHidedChannelCard.ui" />
+    <QtUic Include="CImpedanceWidget.ui" />
+    <QtUic Include="CPatientInfoCard.ui" />
+    <QtUic Include="CPlaybackToolbar.ui" />
+    <QtUic Include="CProgressBarDialog.ui" />
+    <QtUic Include="CRecordFace.ui" />
+    <QtUic Include="CTrainRecordComponent.ui" />
+    <QtUic Include="Detect.ui" />
+    <QtUic Include="Header.ui" />
+    <QtUic Include="LoginPage\CLoadingScreen.ui" />
+    <QtUic Include="LoginPage\CLoginPage.ui" />
+    <QtUic Include="MainFrame.ui" />
+    <QtUic Include="CNxMessageBox.ui" />
+    <QtUic Include="Optimus.ui" />
+    <QtMoc Include="Optimus.h" />
+    <ClCompile Include="Header\Header.cpp" />
+    <ClCompile Include="MainFrame\MainFrame.cpp" />
+    <ClCompile Include="main.cpp" />
+    <QtUic Include="Oscillograph.ui" />
+    <QtUic Include="CPatientAdminPage.ui" />
+    <QtUic Include="CProgressDialog.ui" />
+    <QtUic Include="StandardTreatmentPage.ui" />
+    <QtUic Include="StandardTreatmentPage\CCourseAllocationWidget.ui" />
+    <QtUic Include="StatisticsPage.ui" />
+    <QtUic Include="SystemSettings\CSystemSettings.ui" />
+    <QtUic Include="TrainPage.ui" />
+    <QtUic Include="TrainPage\CCreateEvent.ui" />
+    <QtUic Include="TrainPage\CEventWidget.ui" />
+    <QtUic Include="TrainRecord.ui" />
+    <QtUic Include="TreatmentCfg.ui" />
+    <QtUic Include="UserManage\CUserInfo.ui" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cpp.hint" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="CChannelSelectorRow.h" />
+    <QtMoc Include="CChannelSelectorCard.h" />
+    <QtMoc Include="CHidedChannelCard.h" />
+    <QtMoc Include="CFilterSettingDialog.h" />
+    <ProjectReference Include="..\NxAppService\NxAppService.vcxproj">
+      <Project>{b0562ce6-4ecd-42c5-a137-4565aa2ba8cd}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\NxCommonWidget\NxCommonWidget.vcxproj">
+      <Project>{c0357537-35e7-4af1-958d-daa5ff54c13f}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\NxElectrodeMap\NxElectrodeMap.vcxproj">
+      <Project>{69770f7a-72e2-4f90-89ad-b5564cbcdc42}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\NxBrainAreaWidget\NxBrainAreaWidget.vcxproj">
+      <Project>{9cde720c-4a39-4400-89d4-580fde8c9fc5}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\NxSpectrogram\NxSpectrogram.vcxproj">
+      <Project>{d388a58c-56ab-465f-badc-70b1ce51e8b8}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\NxSpikeScope\NxSpikeScope.vcxproj">
+      <Project>{a0c2179a-16bc-48ee-a073-7671524c3f80}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\NxWaveformWidget\NxWaveformWidget.vcxproj">
+      <Project>{b533e837-d5b0-4e79-bf79-635c5d69d96c}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="SystemSettings\CSwitchButton.h" />
+    <QtMoc Include="UserManage\CUserInfo.h" />
+    <QtMoc Include="SystemSettings\CSystemSettings.h" />
+    <QtMoc Include="StandardTreatmentPage\CCourseAllocationWidget.h" />
+    <QtMoc Include="TrainPage\CEventWidget.h" />
+    <QtMoc Include="TrainPage\CEventButton.h" />
+    <QtMoc Include="CNxMessageBox.h" />
+    <QtMoc Include="CHeatMap.h" />
+    <QtMoc Include="CPatientInfoCard.h" />
+    <QtMoc Include="CPatientInfo.h" />
+    <QtMoc Include="CRecordFace.h" />
+    <QtMoc Include="CIllnessInfo.h" />
+    <QtMoc Include="LoginPage\CLoginPage.h" />
+    <QtMoc Include="LoginPage\CLoadingScreen.h" />
+    <QtMoc Include="CExportEEGDialog.h" />
+    <QtMoc Include="CProgressBarDialog.h" />
+    <ClInclude Include="resource.h" />
+    <QtMoc Include="CProgressDialog.h" />
+    <QtMoc Include="CDragableDialog.h" />
+    <QtMoc Include="CImpedanceWidget.h" />
+    <QtMoc Include="CColorGradientWidget.h" />
+    <QtMoc Include="CTrainRecordComponent.h" />
+    <QtMoc Include="CPlaybackToolbar.h" />
+    <QtMoc Include="CDetectToolbar.h" />
+    <ClInclude Include="Global.h" />
+    <QtMoc Include="TrainPage\CCreateEvent.h" />
+    <QtMoc Include="TrainPage\CChannelMapWidget.h" />
+    <QtMoc Include="TrainPage\COscillograph.h" />
+    <QtMoc Include="TrainPage\CTreatmentCfg.h" />
+    <QtMoc Include="TrainPage\CTrainRecord.h" />
+    <QtMoc Include="TrainPage\CDetect.h" />
+    <QtMoc Include="TrainPage\CChannelPlanWidget.h" />
+    <QtMoc Include="TrainPage\CBinding.h" />
+    <QtMoc Include="StandardTreatmentPage\StandardTreatmentPage.h" />
+    <QtMoc Include="TrainPage\TrainPage.h" />
+    <QtMoc Include="Header\Header.h" />
+    <QtMoc Include="MainFrame\MainFrame.h" />
+    <QtMoc Include="PatientAdminPage\CPatientAdminPage.h" />
+    <QtMoc Include="StatisticsPage\StatisticsPage.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtTranslation Include="Optimus_zh_CN.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NxAppService\NxAppService.vcxproj">
+      <Project>{b0562ce6-4ecd-42c5-a137-4565aa2ba8cd}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\NxSystemCfg\NxSystemCfg.vcxproj">
+      <Project>{937bf3cb-735f-4dfd-967d-88f8b07f7439}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Optimus.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="images\common\logo.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="..\packages\NXLogger.1.0.1\build\native\NXLogger.targets" Condition="Exists('..\packages\NXLogger.1.0.1\build\native\NXLogger.targets')" />
+    <Import Project="..\packages\mysql.8.0.1\build\native\mysql.targets" Condition="Exists('..\packages\mysql.8.0.1\build\native\mysql.targets')" />
+    <Import Project="..\packages\iguana.1.0.4\build\native\iguana.targets" Condition="Exists('..\packages\iguana.1.0.4\build\native\iguana.targets')" />
+    <Import Project="..\packages\frozen.0.0.1\build\native\frozen.targets" Condition="Exists('..\packages\frozen.0.0.1\build\native\frozen.targets')" />
+    <Import Project="..\packages\ormpp.1.1.0\build\native\ormpp.targets" Condition="Exists('..\packages\ormpp.1.1.0\build\native\ormpp.targets')" />
+    <Import Project="..\packages\yalantinglibs.0.2.7\build\native\yalantinglibs.targets" Condition="Exists('..\packages\yalantinglibs.0.2.7\build\native\yalantinglibs.targets')" />
+    <Import Project="..\packages\OpenCV.4.5.5\build\native\OpenCV.targets" Condition="Exists('..\packages\OpenCV.4.5.5\build\native\OpenCV.targets')" />
+  </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\NXLogger.1.0.1\build\native\NXLogger.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\NXLogger.1.0.1\build\native\NXLogger.targets'))" />
+    <Error Condition="!Exists('..\packages\mysql.8.0.1\build\native\mysql.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\mysql.8.0.1\build\native\mysql.targets'))" />
+    <Error Condition="!Exists('..\packages\iguana.1.0.4\build\native\iguana.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\iguana.1.0.4\build\native\iguana.targets'))" />
+    <Error Condition="!Exists('..\packages\frozen.0.0.1\build\native\frozen.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\frozen.0.0.1\build\native\frozen.targets'))" />
+    <Error Condition="!Exists('..\packages\ormpp.1.1.0\build\native\ormpp.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\ormpp.1.1.0\build\native\ormpp.targets'))" />
+    <Error Condition="!Exists('..\packages\yalantinglibs.0.2.7\build\native\yalantinglibs.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\yalantinglibs.0.2.7\build\native\yalantinglibs.targets'))" />
+    <Error Condition="!Exists('..\packages\OpenCV.4.5.5\build\native\OpenCV.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\OpenCV.4.5.5\build\native\OpenCV.targets'))" />
+  </Target>
+</Project>

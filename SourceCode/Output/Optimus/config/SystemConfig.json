@@ -1,0 +1,63 @@
+{
+  "Hospital": {
+    "HospitalName": "xxx",
+    "Department": "xxx"
+  },
+  "Hardware": {
+    "EnableRecord": true,
+    "EnableFilter": true,
+    "EnableGPU": false,
+    "EnableCompress": true,
+    "SyntheticMode":true,
+    "MultiNotchCount": 6,
+    "ImpedanceFreq": 1000,
+    "CommunicationMode": 1,
+    "SaveFileType": "rhd"
+  },
+  "Display": {
+    "DisplayMode": "dark"
+  },
+  "Common": {
+    "AtlasType": "Desikan-Killiany Atlas",
+    "Version": "0.11.0",
+    "Language": "zh-CN",
+    "EnableTestMode": false,
+    "DBIp": "127.0.0.1",
+    "DBUser": "root",
+    "DBPassword": "admin123",
+    "DBName": "optimus",
+    "DBPort": 3306,
+    "FPGAPort": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "StoragePath": "D:/OptimusData/",
+    "LogoutTime":60,
+    "RecorderAddress": "127.0.0.1:50061",
+    "MasterAddress": "127.0.0.1:50063",
+    "TrainAddress":50064,
+    "GamePath":"E:/NxGame/Output/NXGameDeopot/bin/",
+    "BackupPath": "D:/OptimusData/",
+    "BackupDate": 1
+  },
+  "Spectrogram": {
+    "ShowFreqMarker": true,
+    "FreqMarkerValue": 50,
+    "TScale": 1,
+    "MinFreq": 0,
+    "MaxFreq": 200,
+    "HarmonicsNum": 1,
+    "SpectrogramMode": 0
+
+  },
+  "Dropbox": {
+    "Adress": "192.168.0.0.3",
+    "Port": 3323
+  }
+}
