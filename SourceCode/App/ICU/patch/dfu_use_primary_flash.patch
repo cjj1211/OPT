@@ -1,0 +1,19 @@
+--- v2.6.2/nrf/modules/mcuboot/boot/zephyr/Kconfig	2024-12-12 09:45:10.959582800 +0800
++++ v2.6.2_modify/nrf/modules/mcuboot/boot/zephyr/Kconfig	2024-12-10 14:41:42.077660800 +0800
+@@ -103,7 +103,7 @@
+ 
+ config BOOT_IMAGE_ACCESS_HOOKS
+ 	bool
+-	default y if UPDATEABLE_IMAGE_NUMBER > 1 && SOC_NRF5340_CPUAPP && PM_EXTERNAL_FLASH_MCUBOOT_SECONDARY
++	default y if UPDATEABLE_IMAGE_NUMBER > 1 && SOC_NRF5340_CPUAPP
+ 	depends on MCUBOOT
+ 
+ config BOOT_IMAGE_ACCESS_HOOK_NRF5340
+@@ -128,7 +128,6 @@
+ 	depends on FLASH_SIMULATOR
+ 	depends on FLASH_SIMULATOR_DOUBLE_WRITES
+ 	depends on !FLASH_SIMULATOR_STATS
+-	depends on PM_EXTERNAL_FLASH_MCUBOOT_SECONDARY
+ 	depends on BOOT_UPGRADE_ONLY || USE_NRF53_MULTI_IMAGE_WITHOUT_UPGRADE_ONLY
+ 	depends on $(dt_compat_enabled,$(DT_COMPAT_SIM_FLASH))
+ 	select NRF53_MCUBOOT_PRIMARY_1_RAM_FLASH

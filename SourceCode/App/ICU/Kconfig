@@ -1,0 +1,81 @@
+#
+# Copyright (c) 2018 Nordic Semiconductor
+#
+# SPDX-License-Identifier: LicenseRef-Nordic-5-Clause
+#
+
+source "Kconfig.zephyr"
+
+menu "Nordic UART BLE GATT service sample"
+
+config BT_NUS_THREAD_STACK_SIZE
+	int "Thread stack size"
+	default 1024
+	help
+	  Stack size used in each of the two threads
+
+config BT_NUS_UART_BUFFER_SIZE
+	int "UART payload buffer element size"
+	default 40
+	help
+	  Size of the payload buffer in each RX and TX FIFO element
+
+config BT_NUS_SECURITY_ENABLED
+	bool "Enable security"
+	default y
+	select BT_SMP
+	help
+	  "Enable BLE security for the UART service"
+
+config BT_NUS_HOST_AUTH_ENABLED
+	bool "Enable application layer authentication"
+	default y
+	help
+	  "Enable BLE application authentication for the UART service"
+
+config BT_NUS_FPGA_OTA_ENABLED
+	bool "Enable FPGA upgrade function"
+	default n
+	help
+	  "Enable FPGA upgrade for the UART service"
+
+config BT_NUS_UART_RX_WAIT_TIME
+	int "Timeout for UART RX complete event"
+	default 50000
+	help
+	  Wait for RX complete event time in microseconds
+
+config BT_NUS_UART_ASYNC_ADAPTER
+	bool "Enable UART async adapter"
+	select SERIAL_SUPPORT_ASYNC
+	help
+	  Enables asynchronous adapter for UART drives that supports only
+	  IRQ interface.
+
+config BT_NUS_IMP_MEA_MOCK_TEST
+	bool "Enable MOCK Test of Impedance measure process"
+	default n
+	help
+	  Enable Mock Test of Impedance measure process
+
+config EVENT_WORKQUEUE_STACK_SIZE
+	int "Event workqueue stack size"
+	default 1024
+
+config EVENT_STACK_WARNING_THRESHOLD
+	int "Event workqueue stack threshold"
+	default 512
+
+config EVENT_WORKQUEUE_PRIORITY
+	int "Event workqueue priority"
+	default 7
+
+config EVENT_WORKQUEUE_MONITOR
+	bool "Enable event workqueue monitor"
+	default n
+
+config EVENT_MAX_LATENCY
+	int "event max latency"
+	default 100
+
+endmenu

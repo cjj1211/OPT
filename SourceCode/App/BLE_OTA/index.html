@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Andras Barthazi">
+    <title>mcumgr web</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/mcumgr.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+    <meta name="theme-color" content="#563d7c">
+</head>
+<body>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">
+        <span id="device-name">连接你的设备</span>
+    </a>
+</nav>
+<main role="main" class="container">
+
+<div class="starter-template">
+    <h1>mcumgr web</h1>
+    <div class="content" id="initial-screen">
+        <div class="alert alert-primary" role="alert" id="bluetooth-is-available">
+            <b><span id="bluetooth-is-available-message"></span></b>
+            该工具与具有 <b>最新 Chrome、Opera 和 Edge</b> 浏览器的桌面（或笔记本）兼容，并且需要工作中的蓝牙连接（大多数笔记本都具备蓝牙功能）。你也可以尝试在 Android 上使用 Chrome，或在 iOS/iPadOS 上使用 Bluefy。
+        </div>
+        <div id="connect-block" style="display: none;">
+            <div class="form-group form-inline">
+                <div class="col-auto">
+                    <input id="device-name-input" type="text" class="form-control" id="device-name-input" placeholder="设备名称（可选）">
+                </div>
+                <div class="col-auto">
+                    <button id="button-connect" type="submit" class="btn btn-primary"><i class="bi-bluetooth"></i> 连接</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content" id="connecting-screen" style="display: none;">
+        <div class="alert alert-primary" role="alert">
+            连接中...
+          </div>
+    </div>
+    <div class="content" id="connected-screen" style="display: none;">
+        <div class="container">
+            <div>
+                <button id="button-echo" type="submit" class="btn btn-primary"><i class="bi-soundwave"></i> 回显</button>
+                <button id="button-disconnect" type="submit" class="btn btn-secondary"><i class="bi-x-square"></i> 断开连接</button>
+                <button id="button-reset" type="submit" class="btn btn-info"><i class="bi-arrow-clockwise"></i> 重置</button>
+            </div>
+            <hr />
+            <h3>文件</h3>
+            <div id="image-list"></div>
+            <div>
+                <button id="button-image-state" type="submit" class="btn btn-info"><i class="bi-arrow-down-circle"></i> 刷新</button>
+                <button id="button-erase" type="submit" class="btn btn-warning"><i class="bi-eraser-fill"></i> 擦除</button>
+                <button id="button-test" type="submit" class="btn btn-primary" disabled><i class="bi-question-square"></i> 测试</button>
+                <button id="button-confirm" type="submit" class="btn btn-success" disabled><i class="bi-check2-square"></i> 确认</button>
+            </div>
+            <hr />
+            <h3>文件上传</h3>
+            <div class="form-group">
+                <input type="file" class="form-control" id="file-image" />
+            </div>
+            <div class="image">
+                <div class="form-group">
+                    <div id="file-status">选择升级文件(.bin)</div>
+                    <div id="file-info"></div>
+                </div>
+                <button class="btn btn-primary" id="file-upload" disabled><i class="bi-upload"></i> 上传</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/cbor.js"></script>
+<script src="js/mcumgr.js?v=6"></script>
+<script src="js/index.js?v=6"></script>
+</main>
+</body>
+</html>

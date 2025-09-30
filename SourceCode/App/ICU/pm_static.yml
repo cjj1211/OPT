@@ -1,0 +1,133 @@
+app:
+  address:     0x00c200
+  end_address: 0x064000
+  region: flash_primary
+  size:        0x057e00
+
+mcuboot:
+  address:     0x000000
+  end_address: 0x00c000
+  placement:
+    before:
+    - mcuboot_primary
+  region: flash_primary
+  size:        0x00c000
+
+mcuboot_pad:
+  address:     0x00c000
+  end_address: 0x00c200
+  placement:
+    align:
+      start:   0x004000
+    before:
+    - mcuboot_primary_app
+  region: flash_primary
+  size:        0x000200
+
+mcuboot_primary:
+  address:     0x00c000
+  end_address: 0x064000
+  orig_span: &id001
+  - mcuboot_pad
+  - app
+  region: flash_primary
+  sharers: 0x1
+  size:        0x058000
+  span: *id001
+
+mcuboot_primary_app:
+  address:     0x00c200
+  end_address: 0x064000
+  orig_span: &id002
+  - app
+  region: flash_primary
+  size:        0x057e00
+  span: *id002
+
+mcuboot_secondary:
+  address:     0x064000
+  end_address: 0x0bc000
+  placement:
+    after:
+    - mcuboot_primary
+    align:
+      start:   0x004000
+  region: flash_primary
+  share_size:
+  - mcuboot_primary
+  size:        0x058000
+
+#NetCore partitions
+# NetCore primary partition in AppCore RAM. Needed for DFU
+mcuboot_primary_1:
+  address: 0x0
+  device: flash_ctrl
+  end_address: 0x040000
+  region: ram_flash
+  size: 0x040000
+
+# RAM allocation for NetCore primary partition. Used by MCUBoot. Needed for DFU
+ram_flash:
+  address: 0x40000
+  end_address: 0x40000
+  region: ram_flash
+  size: 0x0
+
+# NetCore secondary partition in internal flash. Needed for DFU
+mcuboot_secondary_1:
+  address:     0x0bc000
+  end_address: 0x0fc000
+  placement:
+    after:
+    - mcuboot_secondary
+  region: flash_primary
+  size:        0x040000
+
+nvs_storage:
+  address:     0x0fc000
+  end_address: 0x100000
+  placement:
+    after:
+    - mcuboot_secondary_1
+  region: flash_primary
+  size:        0x004000
+  
+otp:
+  address: 0xff8100
+  end_address: 0xff83fc
+  region: otp
+  size: 0x2fc
+
+pcd_sram:
+  address: 0x2006f000
+  end_address: 0x20071000
+  placement:
+    before:
+    - networkCore_sram
+    - end
+  region: sram_primary
+  size: 0x2000
+  
+networkCore_sram:
+  address: 0x20071000
+  end_address: 0x20080000
+  placement:
+    before:
+    - end
+  region: sram_primary
+  size: 0xF000
+  
+shared_sram:
+  address: 0x20000000
+  end_address: 0x20001000
+  placement:
+    before:
+    - sram_primary
+  region: sram_primary
+  size: 0x1000
+
+sram_primary:
+  address: 0x20001000
+  end_address: 0x2006f000
+  region: sram_primary
+  size: 0x6e000

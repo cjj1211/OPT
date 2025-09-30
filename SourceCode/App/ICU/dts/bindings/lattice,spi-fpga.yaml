@@ -1,0 +1,5 @@
+description: Optimus SPI node
+ 
+compatible: "lattice,spi-fpga"
+
+include: [spi-device.yaml]
