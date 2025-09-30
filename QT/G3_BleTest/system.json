@@ -1,0 +1,14 @@
+{
+    "test_mode": 1,
+    "fpga_file_path": "./FPGA",
+    "stm32_file_path": "./STM32",
+    "fpga_burn": false,
+    "stm32_burn": false,
+    "interval_time": 5,
+    "ble_uuid":"6e400001-b5a3-f393-e0a9-e50e24dcca9e",
+    "icu_name":"ICU_NWDEDA209",
+    "user_name":"YJYFB",
+    "use_update":true,
+   “range_X”:5000,
+     "range_Y":2000
+}

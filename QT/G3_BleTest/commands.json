@@ -1,0 +1,12 @@
+[
+    {
+        "checked": true,
+        "cmd": "55aa010057000057",
+        "name": "获取版本号"
+    },
+    {
+        "checked": true,
+        "cmd": "55aa110016",
+        "name": "新指令"
+    }
+]

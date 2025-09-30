@@ -1,0 +1,1311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>G3_BleTestClass</class>
+ <widget class="QMainWindow" name="G3_BleTestClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1296</width>
+    <height>1436</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>G3_BleTest</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background:#070E26</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout_3">
+    <item row="0" column="0">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <property name="tabBarAutoHide">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="widget">
+       <attribute name="title">
+        <string>采集测试</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="22" column="2">
+           <widget class="QTextEdit" name="STM32_VERSION">
+            <property name="styleSheet">
+             <string notr="true">color:white;</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QLabel" name="sampleTime_Le">
+            <property name="styleSheet">
+             <string notr="true">border-style: solid;
+border-width: 2px;
+border-color: white;
+color:white;</string>
+            </property>
+            <property name="text">
+             <string>采样时间</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="0">
+           <widget class="QLabel" name="label_7">
+            <property name="styleSheet">
+             <string notr="true">border-style: solid;
+border-width: 2px;
+border-color: white;
+color:white;</string>
+            </property>
+            <property name="text">
+             <string>工程模式</string>
+            </property>
+           </widget>
+          </item>
+          <item row="16" column="0">
+           <widget class="QPushButton" name="icuPower">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-style: solid;
+border-width: 2px;
+border-color: white;
+color:white;</string>
+            </property>
+            <property name="text">
+             <string>ICU电量</string>
+            </property>
+           </widget>
+          </item>
+          <item row="25" column="2">
+           <widget class="QTextEdit" name="getDeviceInfoMessage">
+            <property name="styleSheet">
+             <string notr="true">color:white;</string>
+            </property>
+           </widget>
+          </item>
+          <item row="23" column="0">
+           <widget class="QPushButton" name="FPGAversion">
+            <property name="styleSheet">
+             <string notr="true">border-style: solid;
+border-width: 2px;
+border-color: white;
+color:white;</string>
+            </property>
+            <property name="text">
+             <string>FPGA版本</string>
+            </property>
+           </widget>
+          </item>
+          <item row="18" column="2">
+           <widget class="QTextEdit" name="discharge_charge_ma_Mssage">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="23" column="2">
+           <widget class="QTextEdit" name="FPGA_VERSION">
+            <property name="styleSheet">
+             <string notr="true">color:white;</string>
+            </property>
+           </widget>
+          </item>
+          <item row="24" column="2">
+           <widget class="QTextEdit" name="BLE_VERSION">
+            <property name="styleSheet">
+             <string notr="true">color:white;</string>
+            </property>
+           </widget>
+          </item>
+          <item row="16" column="2">
+           <widget class="QTextEdit" name="icuPowerMessage">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="18" column="0">
+           <widget class="QPushButton" name="discharge_charge_ma">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-style: solid;
+border-width: 2px;
+border-color: white;
+color:white;</string>
+            </property>
+            <property name="text">
+             <string>电池充放电电流</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="2">
+           <widget class="QComboBox" name="sampleTime_Com">
+            <property name="styleSheet">
+             <string notr="true">border-style: solid;
+border-width: 2px;
+border-color: white;
+color:white;</string>
+            </property>
+            <item>
+             <property name="text">
+              <string>30秒</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>1分钟</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item row="22" column="0">
+           <widget class="QPushButton" name="STM32Version">
+            <property name="styleSheet">
+             <string notr="true">border-style: solid;
+border-width: 2px;
+border-color: white;
+color:white;</string>
+            </property>
+            <property name="text">
+             <string>ICU-STM32版本</string>
+            </property>
+           </widget>
+          </item>
+          <item row="21" column="0">
+           <widget class="QPushButton" name="ptx_vddc_voltage">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-style: solid;
+border-width: 2px;
+border-color: white;
+color:white;</string>
+            </property>
+            <property name="text">
+             <string>PTX VDDC 电压</string>
+            </property>
+           </widget>
+          </item>
+          <item row="25" column="0">
+           <widget class="QPushButton" name="getDeviceInfo">
+            <property name="styleSheet">
+             <string notr="true">border-style: solid;
+border-width: 2px;
+border-color: white;
+color:white;</string>
+            </property>
+            <property name="text">
+             <string>获取设备信息</string>
+            </property>
+           </widget>
+          </item>
+          <item row="17" column="0">
+           <widget class="QPushButton" name="boardTemp">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-style: solid;
+border-width: 2px;
+border-color: white;
+color:white;</string>
+            </property>
+            <property name="text">
+             <string>主板温度</string>
+            </property>
+           </widget>
+          </item>
+          <item row="15" column="2">
+           <widget class="QTextEdit" name="rssiMessage">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="19" column="0">
+           <widget class="QPushButton" name="probe_current">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-style: solid;
+border-width: 2px;
+border-color: white;
+color:white;</string>
+            </property>
+            <property name="text">
+             <string>探头电流</string>
+            </property>
+           </widget>
+          </item>
+          <item row="24" column="0">
+           <widget class="QPushButton" name="BLEversion">
+            <property name="styleSheet">
+             <string notr="true">border-style: solid;
+border-width: 2px;
+border-color: white;
+color:white;</string>
+            </property>
+            <property name="text">
+             <string>BLE版本</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="2">
+           <widget class="QComboBox" name="comboBox">
+            <property name="styleSheet">
+             <string notr="true">border-style: solid;
+border-width: 2px;
+border-color: white;
+color:white;</string>
+            </property>
+            <item>
+             <property name="text">
+              <string>是</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>否</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item row="14" column="2">
+           <widget class="QTextEdit" name="temperatureMessage">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="14" column="0">
+           <widget class="QPushButton" name="temperature">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-style: solid;
+border-width: 2px;
+border-color: white;
+color:white;</string>
+            </property>
+            <property name="text">
+             <string>ICU温度</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="2">
+           <widget class="QComboBox" name="bleName_Com">
+            <property name="styleSheet">
+             <string notr="true">border-style: solid;
+border-width: 2px;
+border-color: white;
+color:white;</string>
+            </property>
+            <item>
+             <property name="text">
+              <string>G3_ICU_test</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Optimus_ICU</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item row="26" column="2">
+           <widget class="QTextEdit" name="setDeviceInfoMessage">
+            <property name="styleSheet">
+             <string notr="true">color:white;</string>
+            </property>
+           </widget>
+          </item>
+          <item row="20" column="2">
+           <widget class="QTextEdit" name="icu_battery_voltagetMssage">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="2">
+           <widget class="QComboBox" name="sample_Com">
+            <property name="styleSheet">
+             <string notr="true">border-style: solid;
+border-width: 2px;
+border-color: white;
+color:white;</string>
+            </property>
+            <item>
+             <property name="text">
+              <string>500HZ</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>800HZ</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>1KHZ</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item row="21" column="2">
+           <widget class="QTextEdit" name="ptx_vddc_voltageMssage">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="20" column="0">
+           <widget class="QPushButton" name="icu_battery_voltage">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-style: solid;
+border-width: 2px;
+border-color: white;
+color:white;</string>
+            </property>
+            <property name="text">
+             <string>ICU电池电压</string>
+            </property>
+           </widget>
+          </item>
+          <item row="15" column="0">
+           <widget class="QPushButton" name="rssi">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-style: solid;
+border-width: 2px;
+border-color: white;
+color:white;</string>
+            </property>
+            <property name="text">
+             <string>信号质量</string>
+            </property>
+           </widget>
+          </item>
+          <item row="17" column="2">
+           <widget class="QTextEdit" name="boardTempMssage">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QLabel" name="bleId_Le">
+            <property name="styleSheet">
+             <string notr="true">border-style: solid;
+border-width: 2px;
+border-color: white;
+color:white;</string>
+            </property>
+            <property name="text">
+             <string>蓝牙ID</string>
+            </property>
+           </widget>
+          </item>
+          <item row="13" column="0">
+           <widget class="QPushButton" name="bleConnect">
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+border-style: solid;
+border-width: 2px;
+border-color: red;
+color:white;
+}</string>
+            </property>
+            <property name="text">
+             <string>蓝牙配对</string>
+            </property>
+           </widget>
+          </item>
+          <item row="26" column="0">
+           <widget class="QPushButton" name="setDeviceInfo">
+            <property name="styleSheet">
+             <string notr="true">border-style: solid;
+border-width: 2px;
+border-color: white;
+color:white;</string>
+            </property>
+            <property name="text">
+             <string>设置设备信息</string>
+            </property>
+           </widget>
+          </item>
+          <item row="10" column="0">
+           <widget class="QLabel" name="label_8">
+            <property name="styleSheet">
+             <string notr="true">border-style: solid;
+border-width: 2px;
+border-color: white;
+color:white;</string>
+            </property>
+            <property name="text">
+             <string>FPGA升级</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="sample_Le">
+            <property name="styleSheet">
+             <string notr="true">border-style: solid;
+border-width: 2px;
+border-color: white;
+color:white;</string>
+            </property>
+            <property name="text">
+             <string>采样率</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="bleName_Le">
+            <property name="styleSheet">
+             <string notr="true">border-style: solid;
+border-width: 2px;
+border-color: white;
+color:white;</string>
+            </property>
+            <property name="text">
+             <string>蓝牙名称</string>
+            </property>
+           </widget>
+          </item>
+          <item row="11" column="0">
+           <widget class="QLabel" name="label_3">
+            <property name="styleSheet">
+             <string notr="true">border-style: solid;
+border-width: 2px;
+border-color: white;
+color:white;</string>
+            </property>
+            <property name="text">
+             <string>ICU-STM32升级</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <widget class="QComboBox" name="bleId_Com">
+            <property name="styleSheet">
+             <string notr="true">border-style: solid;
+border-width: 2px;
+border-color: white;
+color:white;</string>
+            </property>
+            <item>
+             <property name="text">
+              <string>6e400002-b5a3-f393-e0a9-e50e24dcca9e</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item row="13" column="2">
+           <widget class="QTextEdit" name="bleMessage">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:white</string>
+            </property>
+           </widget>
+          </item>
+          <item row="19" column="2">
+           <widget class="QTextEdit" name="probe_currentMssage">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="12" column="0">
+           <widget class="QLabel" name="label_4">
+            <property name="styleSheet">
+             <string notr="true">border-style: solid;
+border-width: 2px;
+border-color: white;
+color:white;</string>
+            </property>
+            <property name="text">
+             <string>ICU-BLE升级</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="0">
+           <widget class="QLabel" name="label_9">
+            <property name="styleSheet">
+             <string notr="true">border-style: solid;
+border-width: 2px;
+border-color: white;
+color:white;</string>
+            </property>
+            <property name="text">
+             <string>写FPGA寄存器</string>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="0">
+           <widget class="QLabel" name="label_10">
+            <property name="styleSheet">
+             <string notr="true">border-style: solid;
+border-width: 2px;
+border-color: white;
+color:white;</string>
+            </property>
+            <property name="text">
+             <string>读寄存器值</string>
+            </property>
+           </widget>
+          </item>
+          <item row="10" column="2">
+           <widget class="QPushButton" name="chooseSTM32">
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+border-style: solid;
+border-width: 2px;
+border-color: red;
+color:white;
+}</string>
+            </property>
+            <property name="text">
+             <string>选择文件</string>
+            </property>
+           </widget>
+          </item>
+          <item row="11" column="2">
+           <widget class="QPushButton" name="choose_FPGA">
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+border-style: solid;
+border-width: 2px;
+border-color: red;
+color:white;
+}</string>
+            </property>
+            <property name="text">
+             <string>选择文件</string>
+            </property>
+           </widget>
+          </item>
+          <item row="12" column="2">
+           <widget class="QPushButton" name="update_BLE">
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+border-style: solid;
+border-width: 2px;
+border-color: red;
+color:white;
+}</string>
+            </property>
+            <property name="text">
+             <string>升级</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="2">
+           <widget class="QLineEdit" name="adress">
+            <property name="styleSheet">
+             <string notr="true">
+border-style: solid;
+border-width: 2px;
+border-color: red;
+color:white;
+</string>
+            </property>
+            <property name="inputMask">
+             <string/>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="placeholderText">
+             <string>地址</string>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="2">
+           <widget class="QLineEdit" name="read_line">
+            <property name="styleSheet">
+             <string notr="true">
+border-style: solid;
+border-width: 2px;
+border-color: red;
+color:white;
+</string>
+            </property>
+            <property name="inputMask">
+             <string/>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="placeholderText">
+             <string>地址</string>
+            </property>
+           </widget>
+          </item>
+          <item row="10" column="3">
+           <widget class="QLineEdit" name="STM32_LE">
+            <property name="styleSheet">
+             <string notr="true">
+border-style: solid;
+border-width: 2px;
+border-color: red;
+color:white;
+</string>
+            </property>
+           </widget>
+          </item>
+          <item row="11" column="3">
+           <widget class="QLineEdit" name="FPGA_LE">
+            <property name="styleSheet">
+             <string notr="true">
+border-style: solid;
+border-width: 2px;
+border-color: red;
+color:white;
+</string>
+            </property>
+           </widget>
+          </item>
+          <item row="10" column="5">
+           <widget class="QPushButton" name="updateSTM32">
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+border-style: solid;
+border-width: 2px;
+border-color: red;
+color:white;
+}</string>
+            </property>
+            <property name="text">
+             <string>升级</string>
+            </property>
+           </widget>
+          </item>
+          <item row="11" column="5">
+           <widget class="QPushButton" name="update_FPGA">
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+border-style: solid;
+border-width: 2px;
+border-color: red;
+color:white;
+}</string>
+            </property>
+            <property name="text">
+             <string>升级</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="5">
+           <widget class="QPushButton" name="write">
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+border-style: solid;
+border-width: 2px;
+border-color: red;
+color:white;
+}</string>
+            </property>
+            <property name="text">
+             <string>写入</string>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="5">
+           <widget class="QPushButton" name="read">
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+border-style: solid;
+border-width: 2px;
+border-color: red;
+color:white;
+}</string>
+            </property>
+            <property name="text">
+             <string>读取</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="3">
+           <widget class="QLineEdit" name="value">
+            <property name="styleSheet">
+             <string notr="true">
+border-style: solid;
+border-width: 2px;
+border-color: red;
+color:white;
+</string>
+            </property>
+            <property name="inputMask">
+             <string/>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="placeholderText">
+             <string>值</string>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="3">
+           <widget class="QLineEdit" name="read_value_line">
+            <property name="styleSheet">
+             <string notr="true">
+border-style: solid;
+border-width: 2px;
+border-color: red;
+color:white;
+</string>
+            </property>
+            <property name="inputMask">
+             <string/>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="placeholderText">
+             <string>值</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QGridLayout" name="gridLayout_2">
+          <item row="0" column="10">
+           <widget class="QPushButton" name="timeOut">
+            <property name="styleSheet">
+             <string notr="true">border-style: solid;
+border-width: 2px;
+border-color: white;
+color:white;</string>
+            </property>
+            <property name="text">
+             <string>超时时间</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <spacer name="horizontalSpacer_3">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="0" column="9">
+           <spacer name="horizontalSpacer_9">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="0" column="15">
+           <spacer name="horizontalSpacer_4">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="0" column="1">
+           <widget class="QPushButton" name="start">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-style: solid;
+border-width: 2px;
+border-color: white;
+color:white;</string>
+            </property>
+            <property name="text">
+             <string>开始采集</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="17">
+           <spacer name="horizontalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="0" column="16">
+           <widget class="QComboBox" name="selectComboBox"/>
+          </item>
+          <item row="0" column="5">
+           <spacer name="horizontalSpacer_5">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="0" column="11">
+           <spacer name="horizontalSpacer_10">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="0" column="12">
+           <widget class="QPushButton" name="impedance">
+            <property name="styleSheet">
+             <string notr="true">border-style: solid;
+border-width: 2px;
+border-color: white;
+color:white;</string>
+            </property>
+            <property name="text">
+             <string>阻抗测试</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="4">
+           <widget class="QPushButton" name="stop">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-style: solid;
+border-width: 2px;
+border-color: white;
+color:white;</string>
+            </property>
+            <property name="text">
+             <string>结束采集</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="8">
+           <widget class="QPushButton" name="sleepMode">
+            <property name="styleSheet">
+             <string notr="true">border-style: solid;
+border-width: 2px;
+border-color: white;
+color:white;</string>
+            </property>
+            <property name="text">
+             <string>休眠模式</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="7">
+           <spacer name="horizontalSpacer_6">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="0" column="6">
+           <widget class="QPushButton" name="selectChannel">
+            <property name="styleSheet">
+             <string notr="true">border-style: solid;
+border-width: 2px;
+border-color: white;
+color:white;</string>
+            </property>
+            <property name="text">
+             <string>通道选择</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="0" column="14">
+           <widget class="QPushButton" name="getSensorData">
+            <property name="styleSheet">
+             <string notr="true">border-style: solid;
+border-width: 2px;
+border-color: white;
+color:white;</string>
+            </property>
+            <property name="text">
+             <string>传感信息采集</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="13">
+           <spacer name="horizontalSpacer_11">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QProgressBar" name="progressBar">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QProgressBar {
+                                   border: none;
+                                   background-color:rgba(153,178,244,0.42); 
+                                   color: white;
+                                    
+                                   }
+
+                                   QProgressBar::chunk {
+                                   background-color: #1890FF; 
+                                   color:white;
+                                   }
+                                   QProgressBar::sub-page {
+                                   background-color: #99B2F4; 
+
+                                   }</string>
+          </property>
+          <property name="value">
+           <number>0</number>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="invertedAppearance">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>报告预览</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <layout class="QGridLayout" name="gridLayout_6">
+          <item row="0" column="2">
+           <widget class="QLabel" name="label_2">
+            <property name="styleSheet">
+             <string notr="true">color:white;</string>
+            </property>
+            <property name="text">
+             <string>测试人员</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="bleName_Le_3">
+            <property name="styleSheet">
+             <string notr="true">color: white;</string>
+            </property>
+            <property name="text">
+             <string>蓝牙名称</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLineEdit" name="testTime">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:white;</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="5">
+           <widget class="QLineEdit" name="sample">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:white;</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="3">
+           <widget class="QLineEdit" name="bleID">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:white;</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="4">
+           <widget class="QLabel" name="bleName_Le_4">
+            <property name="styleSheet">
+             <string notr="true">color: white;</string>
+            </property>
+            <property name="text">
+             <string>测试时长</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="3">
+           <widget class="QLineEdit" name="testPersonnel">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:white;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="5">
+           <widget class="QLineEdit" name="testLong">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:white;</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="4">
+           <widget class="QLabel" name="sample_Le_3">
+            <property name="styleSheet">
+             <string notr="true">color: white;</string>
+            </property>
+            <property name="text">
+             <string>采样率</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLineEdit" name="bleName">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:white;</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QLabel" name="label">
+            <property name="styleSheet">
+             <string notr="true">color:white;</string>
+            </property>
+            <property name="text">
+             <string>测试时间</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="2">
+           <widget class="QLabel" name="bleId_Le_3">
+            <property name="styleSheet">
+             <string notr="true">color: white;</string>
+            </property>
+            <property name="text">
+             <string>蓝牙ID</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="bleName_Le_5">
+            <property name="styleSheet">
+             <string notr="true">color: white;</string>
+            </property>
+            <property name="text">
+             <string>丢包率</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QLineEdit" name="packetLoss">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:white;</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="2">
+           <widget class="QLabel" name="bleName_Le_6">
+            <property name="styleSheet">
+             <string notr="true">color: white;</string>
+            </property>
+            <property name="text">
+             <string>误码率</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="3">
+           <widget class="QLineEdit" name="errorRate">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:white;</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="4">
+           <widget class="QLabel" name="bleName_Le_7">
+            <property name="styleSheet">
+             <string notr="true">color: white;</string>
+            </property>
+            <property name="text">
+             <string>平均传输速率</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="5">
+           <widget class="QLineEdit" name="averageSpeed">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:white;</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QLabel" name="bleName_Le_8">
+            <property name="styleSheet">
+             <string notr="true">color: white;</string>
+            </property>
+            <property name="text">
+             <string>备注</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QTextEdit" name="textEdit">
+            <property name="styleSheet">
+             <string notr="true">color:white</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <spacer name="horizontalSpacer_7">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="print">
+            <property name="text">
+             <string>打印</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_8">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="G3_BleTest.qrc"/>
+ </resources>
+ <connections/>
+</ui>
