@@ -1,0 +1,61 @@
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'D:\programs\Keil_v5\ARM\ARMCC\Bin'
+Build target 'nrf52840_xxaa'
+compiling main.c...
+..\..\..\main.c(208): warning:  #223-D: function "NRF_LOG_INFO" declared implicitly
+               NRF_LOG_INFO("Connecting to target %02x%02x%02x%02x%02x%02x",
+..\..\..\main.c(220): warning:  #223-D: function "NRF_LOG_INFO" declared implicitly
+               NRF_LOG_INFO("Scan timed out.");
+..\..\..\main.c(276): warning:  #223-D: function "NRF_LOG_DEBUG" declared implicitly
+      NRF_LOG_DEBUG("Receiving data.");
+..\..\..\main.c(277): warning:  #223-D: function "NRF_LOG_HEXDUMP_DEBUG" declared implicitly
+      NRF_LOG_HEXDUMP_DEBUG(p_data, data_len);
+..\..\..\main.c(286): warning:  #223-D: function "NRF_LOG_ERROR" declared implicitly
+                  NRF_LOG_ERROR("app_uart_put failed for index 0x%04x.", i);
+..\..\..\main.c(299): warning:  #223-D: function "NRF_LOG_INFO" declared implicitly
+  		NRF_LOG_INFO("CDC ACM writed data: %s", p_data);
+..\..\..\main.c(310): warning:  #223-D: function "NRF_LOG_ERROR" declared implicitly
+                  NRF_LOG_ERROR("Failed sending NUS message. Error 0x%x. ", ret_val);
+..\..\..\main.c(341): warning:  #223-D: function "NRF_LOG_DEBUG" declared implicitly
+                  NRF_LOG_DEBUG("Ready to send data over BLE NUS");
+..\..\..\main.c(342): warning:  #223-D: function "NRF_LOG_HEXDUMP_DEBUG" declared implicitly
+                  NRF_LOG_HEXDUMP_DEBUG(data_array, index);
+..\..\..\main.c(359): warning:  #223-D: function "NRF_LOG_ERROR" declared implicitly
+              NRF_LOG_ERROR("Communication error occurred while handling UART.");
+..\..\..\main.c(390): warning:  #223-D: function "NRF_LOG_INFO" declared implicitly
+              NRF_LOG_INFO("Discovery complete.");
+..\..\..\main.c(455): warning:  #223-D: function "NRF_LOG_INFO" declared implicitly
+  						NRF_LOG_INFO("Recieved advertise report.");
+..\..\..\main.c(500): warning:  #223-D: function "NRF_LOG_DEBUG" declared implicitly
+              NRF_LOG_DEBUG("PHY update request.");
+..\..\..\main.c(512): warning:  #223-D: function "NRF_LOG_DEBUG" declared implicitly
+              NRF_LOG_DEBUG("GATT Client Timeout.");
+..\..\..\main.c(563): warning:  #223-D: function "NRF_LOG_INFO" declared implicitly
+          NRF_LOG_INFO("ATT MTU exchange completed.");
+..\..\..\main.c(749): warning:  #223-D: function "NRF_LOG_INFO" declared implicitly
+              NRF_LOG_INFO("CDC ACM port opened");
+..\..\..\main.c(754): warning:  #223-D: function "NRF_LOG_INFO" declared implicitly
+              NRF_LOG_INFO("CDC ACM port closed");
+..\..\..\main.c(782): warning:  #223-D: function "NRF_LOG_DEBUG" declared implicitly
+                          NRF_LOG_DEBUG("Ready to send data over BLE NUS");
+..\..\..\main.c(783): warning:  #223-D: function "NRF_LOG_HEXDUMP_DEBUG" declared implicitly
+                          NRF_LOG_HEXDUMP_DEBUG(m_cdc_data_array, index);
+..\..\..\main.c(804): warning:  #223-D: function "NRF_LOG_ERROR" declared implicitly
+                                  NRF_LOG_ERROR("BLE NUS Too many notifications queued.");
+..\..\..\main.c(821): warning:  #223-D: function "NRF_LOG_DEBUG" declared implicitly
+                  NRF_LOG_DEBUG("RX: size: %lu char: %c", size, m_cdc_data_array[index - 1]);
+..\..\..\main.c(859): warning:  #223-D: function "NRF_LOG_INFO" declared implicitly
+              NRF_LOG_INFO("USB power detected");
+..\..\..\main.c(905): warning:  #223-D: function "NRF_LOG_INFO" declared implicitly
+  	  NRF_LOG_INFO("BLE UART central example started.");
+..\..\..\main.c: 23 warnings, 0 errors
+linking...
+.\_build\nrf52840_xxaa.axf: Error: L6218E: Undefined symbol NRF_LOG_DEBUG (referred from main.o).
+.\_build\nrf52840_xxaa.axf: Error: L6218E: Undefined symbol NRF_LOG_ERROR (referred from main.o).
+.\_build\nrf52840_xxaa.axf: Error: L6218E: Undefined symbol NRF_LOG_HEXDUMP_DEBUG (referred from main.o).
+.\_build\nrf52840_xxaa.axf: Error: L6218E: Undefined symbol NRF_LOG_INFO (referred from main.o).
+Not enough information to list image symbols.
+Not enough information to list load addresses in the image map.
+Finished: 2 information, 0 warning and 4 error messages.
+".\_build\nrf52840_xxaa.axf" - 4 Error(s), 23 Warning(s).
+Target not created.
+Build Time Elapsed:  00:00:02

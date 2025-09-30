@@ -1,0 +1,14 @@
+{
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "settings": {
+        "files.associations": {
+            "xstring": "c",
+            "string": "c"
+        }
+    },
+    "extensions": {}
+}

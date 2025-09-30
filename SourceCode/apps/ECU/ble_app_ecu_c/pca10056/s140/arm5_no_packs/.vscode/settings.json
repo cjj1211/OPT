@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "app_util.h": "c",
+        "app_timer.h": "c",
+        "ble_db_discovery.h": "c",
+        "app_uart.h": "c",
+        "app_error.h": "c",
+        "nrf_log.h": "c"
+    }
+}

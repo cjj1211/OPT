@@ -1,0 +1,114 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.37.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: SS adsl12001@qq.com, SS, LIC=BL28G-VD2IT-9ZIWW-QZJE6-VNY00-IRAN5
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.37.0.0
+Toolchain Path:  D:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         
+Dialog DLL:      
+Target DLL:      Segger\JL2CM3.dll V2.99.42.0
+Dialog DLL:      TCM.DLL V1.56.1.0
+ 
+<h2>Project:</h2>
+E:\BLE_Firmware\SourceCode\apps\ICU\ble_app_icu\pca10056\s140\arm5_no_packs\ble_app_uart_pca10056_s140.uvprojx
+Project File Date:  08/27/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'D:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'flash_s140_nrf52_7.2.0_softdevice'
+Before Build - User command #1: attrib +R ..\..\..\..\..\..\components\softdevice\s140\hex\\*
+compiling FpgaInterface.c...
+..\..\..\fgpa\FpgaInterface.h(13): error:  #5: cannot open source input file "nrf_drv_qspi.h": No such file or directory
+  #include "nrf_drv_qspi.h"
+..\..\..\fgpa\FpgaInterface.c: 0 warnings, 1 error
+compiling G3_ProtocolImplBLEPeripheral.c...
+..\..\..\..\..\common\G3_ProtocolInterface.h(9): error:  #5: cannot open source input file "ble_nus.h": No such file or directory
+  #include "ble_nus.h"
+..\..\..\..\..\common\G3_ProtocolImplBLEPeripheral.c: 0 warnings, 1 error
+compiling main.c...
+"no source": Error:  #219: error while deleting file "..\..\..\..\..\..\components\softdevice\s140\hex\main.d": Permission denied
+..\..\..\main.c: 0 warnings, 1 error
+compiling nrfx_ppi.c...
+..\..\..\..\..\..\modules\nrfx\drivers\src\nrfx_ppi.c(41): error:  #5: cannot open source input file "nrfx.h": No such file or directory
+  #include <nrfx.h>
+..\..\..\..\..\..\modules\nrfx\drivers\src\nrfx_ppi.c: 0 warnings, 1 error
+compiling nrfx_wdt.c...
+..\..\..\..\..\..\modules\nrfx\drivers\src\nrfx_wdt.c(41): error:  #5: cannot open source input file "nrfx.h": No such file or directory
+  #include <nrfx.h>
+..\..\..\..\..\..\modules\nrfx\drivers\src\nrfx_wdt.c: 0 warnings, 1 error
+compiling IcuState.c...
+..\..\..\fgpa\IcuState.h(12): error:  #5: cannot open source input file "HardwareDefine.h": No such file or directory
+  #include "HardwareDefine.h"
+..\..\..\fgpa\IcuState.c: 0 warnings, 1 error
+compiling G3_Protocol.c...
+..\..\..\..\..\common\G3_ProtocolInterface.h(9): error:  #5: cannot open source input file "ble_nus.h": No such file or directory
+  #include "ble_nus.h"
+..\..\..\..\..\common\G3_Protocol.c: 0 warnings, 1 error
+compiling nrf_drv_twi.c...
+..\..\..\..\..\..\integration\nrfx\legacy\nrf_drv_twi.h(44): error:  #5: cannot open source input file "nrfx.h": No such file or directory
+  #include <nrfx.h>
+..\..\..\..\..\..\integration\nrfx\legacy\nrf_drv_twi.c: 0 warnings, 1 error
+compiling G3_Seq.c...
+compiling nrfx_twis.c...
+..\..\..\..\..\..\modules\nrfx\drivers\src\nrfx_twis.c(41): error:  #5: cannot open source input file "nrfx.h": No such file or directory
+  #include <nrfx.h>
+..\..\..\..\..\..\modules\nrfx\drivers\src\nrfx_twis.c: 0 warnings, 1 error
+compiling nrf_queue.c...
+..\..\..\..\..\..\components\libraries\queue\nrf_queue.c(40): error:  #5: cannot open source input file "sdk_common.h": No such file or directory
+  #include "sdk_common.h"
+..\..\..\..\..\..\components\libraries\queue\nrf_queue.c: 0 warnings, 1 error
+compiling nrfx_saadc.c...
+..\..\..\..\..\..\modules\nrfx\drivers\src\nrfx_saadc.c(40): error:  #5: cannot open source input file "nrfx.h": No such file or directory
+  #include <nrfx.h>
+..\..\..\..\..\..\modules\nrfx\drivers\src\nrfx_saadc.c: 0 warnings, 1 error
+compiling nrf_drv_ppi.c...
+..\..\..\..\..\..\integration\nrfx\legacy\nrf_drv_ppi.h(44): error:  #5: cannot open source input file "nrfx_ppi.h": No such file or directory
+  #include <nrfx_ppi.h>
+..\..\..\..\..\..\integration\nrfx\legacy\nrf_drv_ppi.c: 0 warnings, 1 error
+compiling nrfx_twi.c...
+..\..\..\..\..\..\modules\nrfx\drivers\src\nrfx_twi.c(41): error:  #5: cannot open source input file "nrfx.h": No such file or directory
+  #include <nrfx.h>
+..\..\..\..\..\..\modules\nrfx\drivers\src\nrfx_twi.c: 0 warnings, 1 error
+compiling nrfx_qspi.c...
+..\..\..\..\..\..\modules\nrfx\drivers\src\nrfx_qspi.c(41): error:  #5: cannot open source input file "nrfx.h": No such file or directory
+  #include <nrfx.h>
+..\..\..\..\..\..\modules\nrfx\drivers\src\nrfx_qspi.c: 0 warnings, 1 error
+"..\..\..\..\..\..\components\softdevice\s140\hex\s140_nrf52_7.2.0_softdevice.hex" - 14 Error(s), 0 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: NordicSemiconductor
+                http://developer.nordicsemi.com/nRF5_SDK/pieces/nRF_DeviceFamilyPack/NordicSemiconductor.nRF_DeviceFamilyPack.8.44.1.pack
+                NordicSemiconductor.nRF_DeviceFamilyPack.8.44.1
+                Nordic Semiconductor nRF ARM devices Device Family Pack with BSD license.
+   * Component: Startup Version: 8.44.1
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_flash_s140_nrf52_7.2.0_softdevice
+  D:/Arm/Packs/NordicSemiconductor/nRF_DeviceFamilyPack/8.44.1/Device/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.6.0
+
+   * Component: NordicSemiconductor::Device:Startup:8.44.1
+      Source file:   Device/Source/arm/arm_startup_nrf52840.s
+      Source file:   Device/Source/system_nrf52.c
+      Include file:  Device/Include/system_nrf52840.h
+      Include file:  Device/Include/system_nrf.h
+Target not created.
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
